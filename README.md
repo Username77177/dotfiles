@@ -32,14 +32,16 @@ Dunst - Notification manager
 ```bash
 mkdir ~/.config/dunst
 ln -sfr dunst ~/.config/dunst/dunstrc
-ln -sfr ~/compton.conf ~/.config/```
+ln -sfr ~/compton.conf ~/.config/
+```
 
 ### i3status
 i3status - statusbar for i3
 
 ```bash
 mkdir ~/.config/i3status/config
-ln -sfr i3status ~/.config/i3status/config```
+ln -sfr i3status ~/.config/i3status/config
+```
 
 ## Editors
 ### Vim
