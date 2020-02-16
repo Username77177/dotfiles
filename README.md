@@ -29,13 +29,17 @@ Rofi - menu for launching applications and more
 ### Compton and Dunst
 Compton - Compositor (transparency, glide, fade effects and more)
 Dunst - Notification manager
-`mkdir ~/.config/dunst & ln -sfr dunst ~/.config/dunst/dunstrc`
-`ln -sfr ~/compton.conf ~/.config/`
+```bash
+mkdir ~/.config/dunst
+ln -sfr dunst ~/.config/dunst/dunstrc
+ln -sfr ~/compton.conf ~/.config/```
 
 ### i3status
 i3status - statusbar for i3
 
-`mkdir ~/.config/i3status/config & ln -sfr i3status ~/.config/i3status/config`
+```bash
+mkdir ~/.config/i3status/config
+ln -sfr i3status ~/.config/i3status/config```
 
 ## Editors
 ### Vim
@@ -53,7 +57,10 @@ Then install my config:
 
 **FOR NVIM**
 
-`mkdir ~/.config/nvim & ln -sfr neovimrc ~/.config/nvim/init.vim`
+```bash
+mkdir ~/.config/nvim 
+ln -sfr neovimrc ~/.config/nvim/init.vim
+```
 
 **FOR DOOM EMACS**
 
