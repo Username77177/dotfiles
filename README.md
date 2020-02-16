@@ -19,7 +19,7 @@ My Configuration files
 In i3 folder i collected all my parts from i3 config.
 For build one file and link it:
 - `cat i3/* >> i3config`
-- `mkdir ~/.config/i3 & ln -sfr ~/Configurations/i3/config-i3 ~/.config/i3/config`
+- `mkdir ~/.config/i3 & ln -sfr i3config ~/.config/i3/config`
 
 ### Rofi and Xterm
 Rofi - menu for launching applications and more
