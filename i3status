@@ -29,8 +29,8 @@ disk "/" {
 }
 
 wireless _first_ {
-	format_up = "<span background='#bacc78'>    %essid |%quality </span>"
-	format_down = " <span background='#fab1a0'>    </span> "
+	format_up = "<span background='#bacc78'>  🌎  %essid |%quality </span>"
+	format_down = " <span background='#fab1a0'>  ❌  </span> "
 }
 
 volume master {
