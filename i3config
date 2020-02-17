@@ -211,7 +211,7 @@ bindsym $mod+q kill
 
 # Запуск Rofi (приложение для выбора приложений)
 bindsym $mod+d exec "rofi -show drun -show-icons -drun-icon-theme Mojave-CT-Night-Mode"
-
+bindsym Mod1+Tab exec "rofi -show window -show-icons -drun-icon-theme Mojave-CT-Night-Mode"
 # M + Shift + Q для выхода
 bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
 
