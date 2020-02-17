@@ -33,6 +33,7 @@ set $workspaceFD "Near Zero: Float Desktop"
 #|_|     \___| \__,_| \__| \__,_||_|    \___||___/
 #Features ( полезные штуки )
 
+
 # Сетуем клавишу мода на Win
 set $mod Mod4
 
@@ -53,7 +54,7 @@ exec "emacs26 -fs -fn 'Fira Code'"
 
 # Обои
 # Первый вариант просто сетует обои, второй же делает обои из гифок
-exec xwinwrap -g 1920x1080 -ov -ni -s -nf -- gifview -w WID ~/wallpaper.gif -a #2
+exec xwinwrap -g 1920x1080 -ov -ni -s -nf -- gifview -w WID ~/wallpapers/girl-and-dog.gif -a #2
 
 # Шрифт
 font pango: Fira Code 10
@@ -212,6 +213,7 @@ bindsym $mod+q kill
 # Запуск Rofi (приложение для выбора приложений)
 bindsym $mod+d exec "rofi -show drun -show-icons -drun-icon-theme Mojave-CT-Night-Mode"
 bindsym Mod1+Tab exec "rofi -show window -show-icons -drun-icon-theme Mojave-CT-Night-Mode"
+
 # M + Shift + Q для выхода
 bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
 
