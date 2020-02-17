@@ -2,7 +2,14 @@
 sudo add-apt-repository ppa:mmstick76/alacritty
 sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt update
-sudo apt install git cmus suckless-tools firefox telegram-desktop npm python3 python3-pip vlc gifsicle i3 i3status rofi dunst compton zsh fonts-firacode tmux alacritty emacs26 curl ranger
+sudo apt install git cmus suckless-tools firefox telegram-desktop npm python3 python3-pip vlc gifsicle i3 i3status rofi dunst compton zsh fonts-firacode tmux alacritty emacs26 curl ranger sshfs
+
+mkdir ~/workspace1/
+mkdir ~/workspace1/docs
+mkdir ~/workspace1/github
+mkdir ~/workspace1/notes
+mkdir ~/workspace1/universities
+
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # DOOM EMACS
