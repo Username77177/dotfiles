@@ -2,7 +2,7 @@
 sudo add-apt-repository ppa:mmstick76/alacritty
 sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt update
-sudo apt install git cmus suckless-tools firefox telegram-desktop npm python3 python3-pip vlc gifsicle i3 i3status rofi dunst compton zsh fonts-firacode tmux alacritty emacs26 curl ranger sshfs
+sudo apt install git cmus suckless-tools firefox telegram-desktop npm python3 python3-pip vlc gifsicle i3 i3status rofi dunst compton zsh fonts-firacode tmux alacritty emacs26 curl ranger sshfs fonts-font-awesome
 
 mkdir ~/workspace1/
 mkdir ~/workspace1/docs

@@ -33,7 +33,6 @@ set $workspaceFD "Near Zero: Float Desktop"
 #|_|     \___| \__,_| \__| \__,_||_|    \___||___/
 #Features ( полезные штуки )
 
-
 # Сетуем клавишу мода на Win
 set $mod Mod4
 
@@ -54,7 +53,7 @@ exec "emacs26 -fs -fn 'Fira Code'"
 
 # Обои
 # Первый вариант просто сетует обои, второй же делает обои из гифок
-exec xwinwrap -g 1920x1080 -ov -ni -s -nf -- gifview -w WID ~/wallpapers/girl-and-dog.gif -a #2
+exec xwinwrap -g 1920x1080 -ov -ni -s -nf -- gifview -w WID ~/wallpaper.gif -a #2
 
 # Шрифт
 font pango: Fira Code 10
@@ -135,34 +134,9 @@ bindcode $mod+105 scratchpad show
 #font pango:Noto Sans 12
 ###}
 
+exec_always --no-startup-id $HOME/dotfiles/launchpolybar.sh
 
 # Color Palette https://flatuicolors.com/palette/us
-bar {
-i3bar_command i3bar --transparency
-status_command i3status
-
-position top
-
-separator_symbol "|"
-
-colors {
-    background #2d3436 # Фон всей панели
-    separator #636e72 # Фон разделителей
-    statusline #000000 # Цвет текста дополнительной панели
-
-    # Цвет: Граница, фон, текст
-    #Неактивные бары
-    #Бар на котором вы сейас находитесь
-    #?
-    #Бар на котором новое приложение
-    inactive_workspace      #2f343f #403952 #dfe6e9
-    focused_workspace       #6c5cc9 #6c5ce7 #e9f1f5
-    active_workspace        #000000 #000000 #ffffff
-    urgent_workspacei       #ff7979 #403952 #ffffff
-}
-# У самого последнего разметка: Фон, шрифт, граница
-}
-
 # Темы для границ окон
 # Thanks, addy-dclxvi
 # https://github.com/addy-dclxvi/i3-starterpack/blob/master/.config/i3/config
@@ -204,7 +178,7 @@ bindsym $mod+m exec alacritty -t 'ranger' -e ranger
 bindsym $mod+Shift+n exec nautilus
 bindsym $mod+Shift+t exec telegram-desktop
 bindsym $mod+Shift+v exec alacritty -t 'vim' -e vim
-bindsym $mod+Shift+B exec boostnote
+bindsym $mod+Shift+b exec boostnote
 bindsym $mod+Shift+d exec discord
 # bindsym $mod+Shift+v exec alacritty -t 'vim' -e nvim
 ###
@@ -372,5 +346,4 @@ for_window [window_role="(?i)(?:pop-up|setup)"]      floating enable
 # Все приложения запускаются через Win + Shift + Первая буква приложения
 # 1 рабочий стол - telegram и firefox, 2 - терминал, 3 - редакторы, 4 - файловые менеджеры
 
-
-#####
+###
