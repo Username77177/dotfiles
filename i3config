@@ -204,6 +204,8 @@ bindsym $mod+m exec alacritty -t 'ranger' -e ranger
 bindsym $mod+Shift+n exec nautilus
 bindsym $mod+Shift+t exec telegram-desktop
 bindsym $mod+Shift+v exec alacritty -t 'vim' -e vim
+bindsym $mod+Shift+B exec boostnote
+bindsym $mod+Shift+d exec discord
 # bindsym $mod+Shift+v exec alacritty -t 'vim' -e nvim
 ###
 
@@ -259,8 +261,8 @@ bindsym $mod+r restart
 # https://www.reddit.com/r/i3wm/comments/3a6nh3/help_how_to_use_function_keys_in_i3_config/
 
 bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
-bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
-bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
 
 ### Яркость экрана
 # TODO
@@ -344,17 +346,27 @@ bindsym $mod+Ctrl+l resize grow width 20 px or 20 ppt
 #|_| \_\ \__,_||_| \___||___/
 #Rules ( правила )
 
+# Workspaces
 assign [class="Firefox|TelegramDesktop"] $workspace1
 assign [class="Alacritty"] $workspace2
-assign [class="Emacs|Gvim|vim|Code"] $workspace3
+assign [class="Emacs|Gvim|vim|Code|Boostnote"] $workspace3
 assign [class="Nautilus|Thunar"] $workspace4
+assign [class="discord"] $workspace5
+
+# Focus
 assign [class="Alacritty|Firefox|TelegramDesktop|Code|Emacs|Nautilus"] focus
+
+# Fullscreen
+for_window [class="discord"]fullscreen toggle
+
 # Тут for_window используется потому что class у ranger - alacritty (терминал, в котором он исполняется)
 # Чтобы перенести Ranger на отдельный воркспейс я просто уточняю, что все окна с заголовком "ranger" переносятся в 4 воркспейс
 for_window [title="ranger"] move container to workspace $workspace4
 # По умолчанию терминал появляется не на полный экран, тут мы это исправляем, причём делаем все терминалы на полный экран только во второй рабочей области
 for_window [workspace=$workspace2]fullscreen toggle
 
+for_window [title="(?i)(?:copying|deleting|moving)"] floating enable
+for_window [window_role="(?i)(?:pop-up|setup)"]      floating enable
 ##################################
 # Внегласные правила
 # Все приложения запускаются через Win + Shift + Первая буква приложения

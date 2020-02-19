@@ -26,6 +26,8 @@ bindsym $mod+m exec alacritty -t 'ranger' -e ranger
 bindsym $mod+Shift+n exec nautilus
 bindsym $mod+Shift+t exec telegram-desktop
 bindsym $mod+Shift+v exec alacritty -t 'vim' -e vim
+bindsym $mod+Shift+b exec boostnote
+bindsym $mod+Shift+d exec discord
 # bindsym $mod+Shift+v exec alacritty -t 'vim' -e nvim
 ###
 
@@ -81,8 +83,8 @@ bindsym $mod+r restart
 # https://www.reddit.com/r/i3wm/comments/3a6nh3/help_how_to_use_function_keys_in_i3_config/
 
 bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
-bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
-bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
 
 ### Яркость экрана
 # TODO
