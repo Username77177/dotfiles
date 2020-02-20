@@ -1,0 +1,186 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	alacritty
+
+# program launcher
+alt + Tab
+	rofi -show window -show-icons -drun-icon-theme Mojave-CT-Night-Mode
+
+super + d
+	rofi -show drun -show-icons -drun-icon-theme Mojave-CT-Night-Mode
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+###MY BINDS###
+super + shift + f
+	firefox
+
+super + shift + e
+	emacs -fn 'Fira Code'
+
+super + shift + m
+	alacritty -t 'ranger' -e ranger
+
+super + shift + n
+	nautilus
+
+super + shift + t
+	telegram-desktop
+
+super + shift + b
+	boostnote
+
+super + shift + d
+	discord
+
+# Sound
+XF86AudioMute
+	amixer -D pulse sset Master toggle
+
+XF86AudioRaiseVolume 
+	amixer -D pulse sset Master 5%+
+
+XF86AudioLowerVolume
+	amixer -D pulse sset Master 5%-
+
+XF86AudioNext
+	mpc next
+
+XF86AudioPrev
+	mpc prev
+
+XF86AudioPlay
+	mpc toggle
+
+XF86AudioStop
+	mpc stop
+
+# Screenshot
+Print
+	scrot ~/Pictures/"Screenshot `date +%F_%R`".png
+
+#############################
+# bspwm hotkeys
+#############################
+
+# Выйти из bspwm 
+super + shift + q
+	bspc quit
+
+# Закрыть данное окно
+super + q
+	bspc window -c
+
+# Псевдо полное окно (без отступов)
+super + m
+	bspc desktop -l next
+
+# if the current node is automatic, send it to the last manual, otherwise pull the last leaf
+super + y
+	bspc query -N -n focused.automatic && bspc node -n last.!automatic || bspc node last.leaf -n focused
+
+# Сделать данную панель главной (самой большой слева)
+super + g
+	bspc node -s biggest
+
+#
+# state/flags
+#
+
+# M+e - тиллинг, M+f - летающий режим, F11 - полный экран
+super + {e,f} 
+	bspc node -t {tiled,floating}
+
+F11
+	bspc node -t {fullscreen}
+
+# Floating - tilled focus (Переключение между режимами float - tilling)
+super + alt + f
+    if [ -z "$(bspc query -N -n focused.tiled)" ]; then \                    
+        bspc node focused -t tiled; \                                           
+    else \                                                                      
+        bspc node focused -t floating; \                                        
+    fi
+
+#TODO set the node flags
+super + ctrl + {x,y,z}
+	bspc node -g {locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# фокусироваться в заданную сторону; перенести окно в заданную сторону 
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+#TODO focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous node in the current desktop
+#super + {_,shift + }c
+#	bspc node -f {next,prev}.local
+
+# Поменять рабочий стол (workspace): предыдущий; следующий
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# Переключиться на предыдущую панель; Переключиться на на предыдущий рабочий стол 
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# Сфокусироваться на предыдущей или следующей панели в истории фокусирования
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# Переключаться между рабочими столами; Направлять окно на рабочий стол
+super + {_,shift + } KP_{End,Down,Next,Left,Begin,Right,Home,Up,Prior}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+#
+# preselect
+#
+
+# Предпросмотр добавления окна
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# Отмена предпросмотра
+super + ctrl + space
+	bspc node -p cancel
+
+# Процентное соотношение (10%-90%) сколько новое окно будет занимать (от данного)
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# Закрыть предпросмотр для всего рабочего стола
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+#
+# move/resize
+#
+
+# expand a window by moving one of its side outward
+#super + alt + {h,j,k,l}
+#	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+#super + alt + shift + {h,j,k,l}
+#	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# Resize floating windows
+super + alt + {h,l,k,j}
+	xdo resize {-w -50,-w +50,-h -50,-h +50}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
