@@ -94,14 +94,18 @@ super + g
 #
 
 # M+e - тиллинг, M+f - летающий режим, F11 - полный экран
-super + {e,f} 
-	bspc node -t {tiled,floating}
+super + e 
+	bspc node -t tiled
 
 F11
-	bspc node -t {fullscreen}
+    if [ -z "$(bspc query -N -n focused.tiled)" ]; then \                    
+	bspc node -t tiled; \
+    else \
+	bspc node -t fullscreen; \
+    fi
 
 # Floating - tilled focus (Переключение между режимами float - tilling)
-super + alt + f
+super + f
     if [ -z "$(bspc query -N -n focused.tiled)" ]; then \                    
         bspc node focused -t tiled; \                                           
     else \                                                                      
@@ -143,9 +147,16 @@ super + {o,i}
 	bspc wm -h on
 
 # Переключаться между рабочими столами; Направлять окно на рабочий стол
-super + {_,shift + } KP_{End,Down,Next,Left,Begin,Right,Home,Up,Prior}
-	bspc {desktop -f,node -d} '^{1-9,10}'
-#
+#super + {_,shift + } KP_{End,Down,Next,Left,Begin,Right,Home,Up,Prior}
+#	   bspc {desktop -f,node -d} '^{1-9,10}'
+
+super + {_,shift + } KP_{End,Down,Next}
+	  bspc {desktop -f,node -d} '^{2-4}'
+
+
+super + {_,shift + } KP_Insert
+	  bspc {desktop -f,node -d} '^1'
+
 # preselect
 #
 
@@ -170,16 +181,14 @@ super + ctrl + shift + space
 #
 
 # expand a window by moving one of its side outward
-#super + alt + {h,j,k,l}
-#	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-#super + alt + shift + {h,j,k,l}
-#	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+super + alt + shift + {l,k,j,h}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # Resize floating windows
-super + alt + {h,l,k,j}
-	xdo resize {-w -50,-w +50,-h -50,-h +50}
 
 # move a floating window
 super + {Left,Down,Up,Right}
