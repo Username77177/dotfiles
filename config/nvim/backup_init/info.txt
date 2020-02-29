@@ -1,0 +1,1 @@
+There is a stable version of init config and other
