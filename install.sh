@@ -18,9 +18,20 @@ if [[ $1 = "config" ]]; then
     ln -sfr ./config/nvim ~/.config/
     ln -sfr ./config/compton.conf ~/.config/
     ln -sfr ./config/i3 ~/.config/
+    ln -sfr ./config/polybar ~/.config/
+    ln -sfr ./config/bspwm ~/.config/
+    ln -sfr ./config/sxhkd ~/.config/
 
 elif [[ $1 = "install" ]]; then
-    sudo apt install nvim compton i3 rofi
+    sudo apt install nvim compton rofi
+    echo "Install i3 [1] or bspwm [2]"
+    read input
+    if [[ $input = 1 ]]; then
+        sudo apt install i3
+
+    elif [[ $input = 2 ]]; then
+       sudo apt install bspwm sxhkd 
+    fi
     # Polybar dependecies
     sudo apt-get install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libpulse-dev libxcb-composite0-dev xcb libxcb-ewmh2 git curl wget
     # Polybar install 

@@ -7,12 +7,12 @@ export ZSH=".oh-my-zsh"
 export EDITOR="emacs"
 
 # Aliases
-alias -g Dd='~/bspwm-ground-config'
+alias -g Dd='~/dotfiles'
 alias -g em='emacs26'
 alias -g fr='firefox'
 alias -g es='pkill save_your_eyes.sh'
-alias -g ns='~/bspwm-ground-config/notes.sh new'
-alias -g sns='~/bspwm-ground-config/notes.sh show'
+alias -g ns='~/dotfiles/scripts/notes.sh new'
+alias -g sns='~/dotfiles/scripts/notes.sh show'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

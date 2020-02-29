@@ -48,7 +48,8 @@ exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:win_space_
 
 ##### Автозапуск приложений
 exec alacritty
-exec "emacs26 -fs -fn 'Fira Code'"
+exec code
+exec ~/dotfiles/scripts/save_your_eyes.sh
 #####
 
 # Обои
@@ -134,12 +135,9 @@ bindcode $mod+105 scratchpad show
 #font pango:Noto Sans 12
 ###}
 
-exec_always --no-startup-id $HOME/dotfiles/config/polybar/launchpolybar.sh
+exec_always --no-startup-id $HOME/.config/polybar/launchpolybar.sh
 
 # Color Palette https://flatuicolors.com/palette/us
-bar {
-
-}
 
 # Темы для границ окон
 # Thanks, addy-dclxvi
@@ -208,9 +206,9 @@ bindsym $mod+v split h
 # разделить следущее окно по вертикали
 bindsym $mod+c split v
 
-# M + Numpad0
+# F11
 # открыть окно на полный экран
-bindcode $mod+90 fullscreen toggle
+bindcode 95 fullscreen toggle
 
 # Поменять вид контейнера
 bindsym $mod+s layout stacking

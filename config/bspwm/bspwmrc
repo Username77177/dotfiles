@@ -1,0 +1,66 @@
+#!/bin/sh
+# XWINWRAP and bind-programm
+sxhkd &
+$HOME/bspwm-ground-config/save_your_eyes.sh &
+$HOME/bspwm-ground-config/notes.sh show &
+#xwinwrap -g 1920x1080 -ov -ni -s -nf --gifview -w WID ~/wallpaper.gif -a &
+
+#Создайте папку ~/wallpapers и поместите туда обои. Они будут выбираться случайно
+feh --bg-scale ~/wallpapers/$(ls ~/wallpapers | shuf -n 1) &
+
+# Polybar
+$HOME/bspwm-ground-config/launchpolybar.sh &
+# Compton
+killall -q compton; compton --config ~/.config/compton.conf &
+# Dunst
+killall -q notify-osd &
+dunst -config ~/.config/dunst/dunstrc &
+# Language
+setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle &
+# Startup
+alacritty &
+#emacs26 &
+code &
+bspc desktop -f ^1 &
+
+bspc monitor -d Desktop Web Terminal Editors
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+# Mouse tweaks
+bspc config focus_follows_pointer true
+
+#RULES#
+#FM##
+bspc rule -a Nautilus desktop=^1
+bspc rule -a Alacritty:ranger state=floating follow=on sticky=on
+#WEB##
+bspc rule -a Firefox desktop=^2
+##Firefox Tweaks##
+bspc rule -a Firefox:Toolkit sticky=on state=floating
+bspc rule -a 'Firefox Beta':Navigator desktop='^2' state=tiled focused=off
+bspc rule -a Firefox:SessionManager desktop='^2' state=floating layer=above
+bspc rule -a Toplevel:Firefox state=floating
+bspc rule -a Firefox:Dialog state=floating
+##
+bspc rule -a Chromium desktop=^2
+bspc rule -a TelegramDesktop desktop=^1 follow=on
+bspc rule -a discord desktop=^1
+#TERMINALS##
+bspc rule -a Alacritty desktop=^3 follow=on
+bspc rule -a xterm desktop=^3 follow=on
+#EDITORS##
+bspc rule -a Emacs desktop=^4 follow=on state=tiled
+bspc rule -a vim desktop=^4 follow=on
+bpsc rule -a nvim desktop=^4 follow=on
+bspc rule -a Code desktop=^4 follow=on
+#OTHER THINGS
+bspc rule -a Pavucontrol state=floating
+
+#FOR ALL WINDOWS
+bspc rule -a * follow=on layer=above state=floating
+bspc rule -a Dunst follow=off layer=above state=floating
