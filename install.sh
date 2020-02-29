@@ -3,7 +3,7 @@
 if [[ $1 = "config" ]]; then
 
     #Mouse tweaks
-    cp 40-libinput.conf usr/share/X11/xorg.conf.d/40-libinput.conf
+    sudo ln -sfr config/40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf
     
     # Home directory configure
     ln -sfr ./tmux.conf ~/.tmux.conf 
