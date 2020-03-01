@@ -34,13 +34,13 @@ Plug 'dense-analysis/ale'
 Plug 'PotatoesMaster/i3-vim-syntax'
 
 " Автодополнение (всё-таки Coc)
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Поддержка С, C++
 " Plug 'xavierd/clang_complete'
 
 " Deoplete
-Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
 

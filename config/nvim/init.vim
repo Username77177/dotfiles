@@ -1,5 +1,6 @@
-source ~/bspwm-ground-config/config/nvim/plugins.vim
-source ~/bspwm-ground-config/config/nvim/plugin_configs.vim
+source ~/dotfiles/config/nvim/plugins.vim
+source ~/dotfiles/config/nvim/plugin_configs.vim
+source ~/dotfiles/config/nvim/coc_settings.vim
 
 "# Binds
 " Комбинация клавиш jkl - действует как Escape в режиме Insert

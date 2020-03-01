@@ -21,6 +21,7 @@ if [[ $1 = "config" ]]; then
     ln -sfr ./config/polybar ~/.config/
     ln -sfr ./config/bspwm ~/.config/
     ln -sfr ./config/sxhkd ~/.config/
+    ln -sfr ./config/vifm ~/.config/
 
 elif [[ $1 = "install" ]]; then
     sudo apt install nvim compton rofi

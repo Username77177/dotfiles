@@ -1,0 +1,108 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/username77177/
+	..
+1582998996
+'b
+	/home/username77177/bin/
+	..
+1582998996
+'h
+	/home/username77177/
+	..
+1582998996
+'z
+	/home/username77177/.config/vifm
+	..
+1582998996
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/username77177/.config/mpd
+	..
+0
+d/home/username77177/.config
+	bspwm
+8
+d/home/username77177/.config/bspwm
+	..
+0
+d/home/username77177/.config
+	..
+0
+d/home/username77177
+	example.py
+27
+d/home
+	username77177
+1
+d/home/username77177
+	Videos
+13
+d/home/username77177/Videos
+	..
+0
+d/home/username77177
+	wallpaper.gif
+32
+d
+
+# Right window history (oldest to newest):
+D/home/username77177/.config/mpd
+	config
+1
+D/home/username77177/.config
+	dconf
+12
+D/home/username77177/.config/dconf
+	..
+0
+D/home/username77177/.config
+	eog
+17
+D
+
+# Command line history (oldest to newest):
+:help
+:colorscheme solarized
+:key
+:df
+:colorscheme
+:colorscheme Gruvbox
+:colorscheme Ph
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
