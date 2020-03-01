@@ -30,7 +30,7 @@ nmap <leader>f :NERDTreeToggle<CR>
 vmap <C-c> <plug>NERDCommenterToggle
 nmap <C-c> <plug>NERDCommenterToggle
 
-nmap <leader>z :Goyo<CR>
+nmap <leader>z :Goyo 150<CR>
 
 """"PLUGINS BINDS""""
 
@@ -44,15 +44,20 @@ nmap <silent> <leader>k <Plug>(ale_previous_wrap)
 " Использовать Emmet (автодополнить код)
 let g:user_emmet_expandabbr_key = '<tab>e'
 
+""" MarkDown
+nmap <leader>m :InstantMarkdownPreview<CR>
+
+""" FZF
+nmap <leader>ff :FZF<CR>
+
+""" 
+
 """ UltiSnips
 let g:UltiSnipsJumpForwardTrigger = "<C-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<C-n>"
 let g:UltiSnipsExpandTrigger = "<tab>"
 
 """""
-
-""" MarkDown
-nmap <leader>m :InstantMarkdownPreview<CR>
 
 "# UI config
 
@@ -62,7 +67,7 @@ set t_Co=256
 syntax enable
 
 " Тема для **NeoVim**
-colorscheme OceanicNext
+colorscheme gruvbox
 
 "# UX config
 

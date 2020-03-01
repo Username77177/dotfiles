@@ -1,4 +1,5 @@
 # dotfiles
+### (old README.md)
 
 - Mouse config (_40-libinput.conf_)
 - i3 - i3 config manually - rofi - compton - polybar

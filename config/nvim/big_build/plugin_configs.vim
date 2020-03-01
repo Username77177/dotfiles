@@ -67,3 +67,7 @@ let g:instant_markdown_mathjax = 1
 let g:instant_markdown_autoscroll = 0
 " Обновление только после сохранения
 let g:instant_markdown_slow = 1
+
+" Indent Line (Tabs)
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_conceallevel = 1

@@ -74,7 +74,7 @@
 
 `python-mode/python-mode, { for: python, branch: develop }`
 
-**Что-то типо Jupyterа прямо в Vim**
+**Что-то типо Jupyter'а прямо в Vim**
 
 `metakirby5/codi.vim`
 
@@ -124,6 +124,12 @@
 `Tab` - автодополнить выражение снипеттом
 
 `S+m` - открыть Markdown файл в браузере
+
+`S+S+w` - EasyMotion
+
+`Ctrl+j` - перейти к следующему изменяемому полю в UltiSnips
+
+`Ctrl+k` - перейти к предыдущему изменяемому полю в UltiSnips
 
 ## Tmux
 *Ctrl* тут отмечен как **С**

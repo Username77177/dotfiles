@@ -3,6 +3,9 @@ call plug#begin() " NERDTree - быстрый просмотр файлов Plug
 " Просмотр папок
 Plug 'preservim/nerdtree'
 
+" Нормальная визуализация табов
+Plug 'Yggdroot/indentLine'
+
 " Линия статуса
 Plug 'itchyny/lightline.vim'
 
@@ -38,12 +41,6 @@ Plug 'PotatoesMaster/i3-vim-syntax'
 " Автодополнение (всё-таки Coc)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Python3 IDE в NeoVim
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
-
-" Что-то типо Jupyter'а прямо в Vim
-Plug 'metakirby5/codi.vim'
-
 " Markdown
 " sudo npm install instant-markdown -g
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
@@ -61,13 +58,17 @@ Plug 'easymotion/vim-easymotion'
 " LaTeX
 Plug 'lervag/vimtex'
 
-
-
 " Поддержка С, C++
 " Plug 'xavierd/clang_complete'
 
 " Deoplete
 " Plug 'Shougo/deoplete.nvim'
+
+" Python3 IDE в NeoVim
+"Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+
+" Что-то типо Jupyter'а прямо в Vim
+" Plug 'metakirby5/codi.vim'
 
 call plug#end()
 
