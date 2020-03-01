@@ -11,8 +11,8 @@
 * tmux
 * mpd
 
-![pic alt](img/Screenshot 2020-03-01_21:30.png "opt title")
-![pic alt](img/Screenshot 2020-03-01_21:31.png "opt title")
+![pic alt](https://raw.githubusercontent.com/Username77177/dotfiles/master/img/Screenshot%202020-03-01_21:30.png)
+![pic alt](https://raw.githubusercontent.com/Username77177/dotfiles/master/img/Screenshot%202020-03-01_21:31.png)
 
 ### Плагины Neovim
 **Просмотр папок**
