@@ -135,7 +135,7 @@ bindcode $mod+105 scratchpad show
 #font pango:Noto Sans 12
 ###}
 
-exec_always --no-startup-id $HOME/.config/polybar/launchpolybar.sh
+exec_always --no-startup-id $HOME/.config/polybar/launchpolybar_i3.sh
 
 # Color Palette https://flatuicolors.com/palette/us
 

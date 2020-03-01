@@ -1,8 +1,8 @@
 # dotfiles
 
 - Mouse config (_40-libinput.conf_)
-- i3 - i3 config manually - rofi - compton - i3status
-- Editors (Doom Emacs, Vim, Neovim)
+- i3 - i3 config manually - rofi - compton - polybar
+- Editor NeoVim
 
 My Configuration files
 

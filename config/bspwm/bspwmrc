@@ -9,7 +9,7 @@ $HOME/bspwm-ground-config/notes.sh show &
 feh --bg-scale ~/wallpapers/$(ls ~/wallpapers | shuf -n 1) &
 
 # Polybar
-$HOME/bspwm-ground-config/launchpolybar.sh &
+$HOME/dotfiles/config/polybar/launchpolybar_bspwm.sh & 
 # Compton
 killall -q compton; compton --config ~/.config/compton.conf &
 # Dunst

@@ -13,6 +13,7 @@ alias -g fr='firefox'
 alias -g es='pkill save_your_eyes.sh'
 alias -g ns='~/dotfiles/scripts/notes.sh new'
 alias -g sns='~/dotfiles/scripts/notes.sh show'
+alias -g gp='~/gitprojects/'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
