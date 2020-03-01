@@ -7,12 +7,15 @@
 * rofi
 * polybar
 * neovim
-* *ranger* или *vifm* alacritty
+* *ranger* или *vifm*
+* alacritty
 * tmux
 * mpd
 
-![pic alt](https://raw.githubusercontent.com/Username77177/dotfiles/master/img/Screenshot%202020-03-01_21:30.png)
-![pic alt](https://raw.githubusercontent.com/Username77177/dotfiles/master/img/Screenshot%202020-03-01_21:31.png)
+![Terminal](https://raw.githubusercontent.com/Username77177/dotfiles/master/img/Screenshot%202020-03-01_21:30.png)
+![Wallpapers with Polybar](https://raw.githubusercontent.com/Username77177/dotfiles/master/img/Screenshot%202020-03-01_21:31.png)
+![#](https://raw.githubusercontent.com/Username77177/dotfiles/master/img/Screenshot%202020-03-01_21:39.png)
+![##](https://raw.githubusercontent.com/Username77177/dotfiles/master/img/Screenshot%202020-03-01_21:40.png)
 
 ### Плагины Neovim
 **Просмотр папок**
@@ -82,6 +85,7 @@
 **UML в Vim**
 
 `aklt/plantuml-syntax`
+
 `scrooloose/vim-slumlord`
 
 **FuzzyFinder в Vim**
