@@ -1,80 +1,151 @@
-# dotfiles
+# Немного о репозитории
+Этот репозиторий содержит все основные конфигурационные файлы, которые я использую.
 
-- Mouse config (_40-libinput.conf_)
-- i3 - i3 config manually - rofi - compton - polybar
-- Editor NeoVim
+Среди программ:
 
-My Configuration files
+* **i3** или **bspwm**
+* rofi
+* polybar
+* neovim
+* *ranger* или *vifm* alacritty
+* tmux
+* mpd
 
-40-libinput.conf - Mousepad configuration on laptop
+![pic alt](img/Screenshot 2020-03-01_21:30.png "opt title")
+![pic alt](img/Screenshot 2020-03-01_21:31.png "opt title")
 
-`ln -sfr 40-libinput.conf /usr/share/X11/xorg.conf.d/40-libibput.conf`
+### Плагины Neovim
+**Просмотр папок**
 
-## i3
+`preservim/nerdtree`
 
-In i3 folder i collected all my parts from i3 config.
-For build one file and link it:
+**Линия статуса**
 
-- `cat i3/* >> i3config`
-- `mkdir ~/.config/i3 & ln -sfr i3config ~/.config/i3/config`
+`itchyny/lightline.vim`
 
-### Rofi and Xterm
+**Emmet для Vim**
 
-Rofi - menu for launching applications and more
+`mattn/emmet-vim`
 
-`ln -sfr XRESOURCES-for-all ~/.Xresources`
+**Темы**
 
-### Compton and Dunst
+`mhartington/oceanic-next`
 
-Compton - Compositor (transparency, glide, fade effects and more)
-Dunst - Notification manager
+`sjl/badwolf`
 
-```bash
-mkdir ~/.config/dunst
-ln -sfr dunst ~/.config/dunst/dunstrc
-ln -sfr ~/compton.conf ~/.config/
-```
+`morhetz/gruvbox`
 
-### i3status
+**CSS/SCSS/HTML подсветка цвета**
 
-i3status - statusbar for i3
+`gorodinskiy/vim-coloresque`
 
-```bash
-mkdir ~/.config/i3status/config
-ln -sfr i3status ~/.config/i3status/config
-```
+**Zen mode**
 
-## i3 with polybar
+`junegunn/goyo.vim`
 
-- `cat i3-new/* >> i3config`
-- `mkdir ~/.config/i3 & ln -sfr i3config ~/.config/i3/config`
+**Git Integration**
 
-`ln -sfr polybar.conf $HOME/.config/polybar/config`
+`airblade/vim-gitgutter`
 
-## Editors
+**NERDCommenter (плагин для комментирования)**
 
-### Vim
+`preservim/nerdcommenter`
 
-You need [vim-plug](https://github.com/junegunn/vim-plug)
+**Сниппеты (сноски кода)**
 
-```bash
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
+`SirVer/ultisnips |  honza/vim-snippets`
 
-Then install my config:
+**ALE (Проверка на синтаксические ошибки)**
 
-**FOR VIM:**
+`dense-analysis/ale`
 
-`ln -sfr vimrc ~/.vimrc`
+**i3 syntax**
 
-**FOR NVIM**
+`PotatoesMaster/i3-vim-syntax`
 
-```bash
-mkdir ~/.config/nvim
-ln -sfr neovimrc ~/.config/nvim/init.vim
-```
+**Автодополнение (всё-таки Coc)**
 
-**FOR DOOM EMACS**
+`neoclide/coc.nvim, {branch: release}`
 
-`ln -sfr doom.d ~/.doom.d`
+**Python3 IDE в NeoVim**
+
+`python-mode/python-mode, { for: python, branch: develop }`
+
+**Что-то типо Jupyterа прямо в Vim**
+
+`metakirby5/codi.vim`
+
+**Markdown**
+
+`suan/vim-instant-markdown, {for: markdown}`
+
+**UML в Vim**
+
+`aklt/plantuml-syntax`
+`scrooloose/vim-slumlord`
+
+**FuzzyFinder в Vim**
+
+`junegunn/fzf, { do: { -> fzf#install() } }`
+
+**Быстрое передвижение**
+
+`easymotion/vim-easymotion`
+
+**LaTeX**
+
+`lervag/vimtex`
+
+# Горячие клавиши
+
+## NeoVim
+`jkl` - ESC
+
+`jks` - ESC + сохранить (*:w*)
+
+`Space` - дополнительная главная клавиша в нормальном режиме (*далее просто* `S`)
+
+`S+z` - перейти в режим Zen (goyo)
+
+`S+f` - открыть просмотр файлов NERDTree
+
+`Ctrl+c` - закоментировать строку или выделение
+
+`Tab+e` - преобразовать выражение Emmet
+
+`S+j или k` - перейти к следующей (*или предыдущей*) ошибке, замеченной ALE
+
+`F2` - выйти или войти в режим вставки в Vim
+
+`Tab` - автодополнить выражение снипеттом
+
+`S+m` - открыть Markdown файл в браузере
+
+## Tmux
+*Ctrl* тут отмечен как **С**
+
+`C+a` - клавиша префикса (*ранее Ctrl+b*)
+
+**Сначала нажимается префикс, а потом уже следующие комбинации**
+
+`hjkl` - перемещение между окнами
+
+`HJKL` - увеличить размер панели с соответствующей стороны
+
+`-` - разделить окно горизонтально
+
+`_` - разделить окно вертикально
+
+`> или <` - поменять текущую и предыдущую панель местами
+
+`C+f` - поиск сессии
+
+`C+h` - предыдущее окно
+
+`C+l` - следующее окно
+
+**Для переключения между окнами можно использовать Shift+стрелки, однако я рекомендую вариант выше**
+
+`Tab` - последнее окно
+
+## bspwm (sxhkd)

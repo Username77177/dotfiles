@@ -13,7 +13,9 @@ alias -g fr='firefox'
 alias -g es='pkill save_your_eyes.sh'
 alias -g ns='~/dotfiles/scripts/notes.sh new'
 alias -g sns='~/dotfiles/scripts/notes.sh show'
-alias -g dt='trash-cli'
+alias -g dt='trash' # Delete to the trash
+alias -g tl='trash-list' # Trash-list
+alias -g rt='restore-trash' #Restore Trash
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

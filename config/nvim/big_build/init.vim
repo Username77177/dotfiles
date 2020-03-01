@@ -51,6 +51,9 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 
 """""
 
+""" MarkDown
+nmap <leader>m :InstantMarkdownPreview<CR>
+
 "# UI config
 
 " Делаем Vim цветным ( с темой и синтаксисом )

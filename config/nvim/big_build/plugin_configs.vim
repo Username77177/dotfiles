@@ -52,8 +52,18 @@ let g:NERDToggleCheckAllLines = 1
 
 " Deoplete
 " Запускать Deoplete при запуске
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#auto_completion_start_length = 1
-let g:deoplete#sources = {}
-let g:deoplete#sources._ = []
+"let g:deoplete#enable_at_startup = 1
+"let g:deoplete#auto_completion_start_length = 1
+"let g:deoplete#sources = {}
+"let g:deoplete#sources._ = []
 
+" Markdown
+" Отключаем автостарт
+" :InstantMarkdownPreview - включить просмотр Markdown
+let g:instant_markdown_autostart = 0
+" Включаем MathJax
+let g:instant_markdown_mathjax = 1
+" Включаем автоскролл
+let g:instant_markdown_autoscroll = 0
+" Обновление только после сохранения
+let g:instant_markdown_slow = 1

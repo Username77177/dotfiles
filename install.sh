@@ -34,7 +34,7 @@ if [[ $1 = "config" ]]; then
     ln -sfr ./config/vifm ~/.config/
 
 elif [[ $1 = "install" ]]; then
-    sudo apt install nvim compton rofi
+    sudo apt install nvim compton rofi trash-cli
     echo "Install i3 [1] or bspwm [2]"
     read input
     if [[ $input = 1 ]]; then

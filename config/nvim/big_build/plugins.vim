@@ -2,7 +2,6 @@ call plug#begin() " NERDTree - быстрый просмотр файлов Plug
 
 " Просмотр папок
 Plug 'preservim/nerdtree'
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Линия статуса
 Plug 'itchyny/lightline.vim'
@@ -46,7 +45,7 @@ Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'metakirby5/codi.vim'
 
 " Markdown
-" sudo npm install instant-markdown-d -g
+" sudo npm install instant-markdown -g
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 
 " UML в Vim
