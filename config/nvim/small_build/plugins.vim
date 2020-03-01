@@ -24,23 +24,4 @@ Plug 'airblade/vim-gitgutter'
 " NERDCommenter (плагин для комментирования)
 Plug 'preservim/nerdcommenter'
 
-" Сниппеты (сноски кода)
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
-" ALE (Проверка на синтаксические ошибки)
-Plug 'dense-analysis/ale'
-
-" i3 syntax
-Plug 'PotatoesMaster/i3-vim-syntax'
-
-" Автодополнение (всё-таки Coc)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" Поддержка С, C++
-" Plug 'xavierd/clang_complete'
-
-" Deoplete
-" Plug 'Shougo/deoplete.nvim'
-
 call plug#end()
-

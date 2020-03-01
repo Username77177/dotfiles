@@ -6,15 +6,25 @@ if [[ $1 = "config" ]]; then
     sudo ln -sfr config/40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf
     
     # Home directory configure
-    ln -sfr ./tmux.conf ~/.tmux.conf 
-    ln -sfr ./alacritty.yml ~/.alacritty.yml
-    ln -sfr ./vimrc.old ~/.vimrc
-    ln -sfr ./XRESOURCES-for-all ~/.Xresources
-    ln -sfr ./zshrc ~/.zshrc
+    ln -sfr tmux.conf ~/.tmux.conf 
+    ln -sfr alacritty.yml ~/.alacritty.yml
+    ln -sfr vimrc.old ~/.vimrc
+    ln -sfr XRESOURCES-for-all ~/.Xresources
+    ln -sfr zshrc ~/.zshrc
     
     # .config directory configure
     ln -sfr ./config/dunst ~/.config/
     ln -sfr ./config/mpd ~/.config/
+    echo "[s]mall_config for nvim or [b]ig_config?"
+    echo "s or b: "
+    read input
+    if [[ $input = "b" || $input = 'B' ]]; then
+        cp ./config/nvim/big_build/init.vim ./config/nvim/
+        mkdir -p ./config/nvim/plugged/coc.nvim
+        cp ./config/nvim/big_build/coc-settings.json ./config/nvim/plugged/coc.nvim/
+    else
+        cp ./config/nvim/small_build/init.vim ./config/nvim/
+    fi
     ln -sfr ./config/nvim ~/.config/
     ln -sfr ./config/compton.conf ~/.config/
     ln -sfr ./config/i3 ~/.config/

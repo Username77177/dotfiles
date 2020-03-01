@@ -1,6 +1,5 @@
-source ~/dotfiles/config/nvim/big_build/plugins.vim
-source ~/dotfiles/config/nvim/big_build/plugin_configs.vim
-source ~/dotfiles/config/nvim/big_build/coc_settings.vim
+source ~/dotfiles/config/nvim/small_build/plugins.vim
+source ~/dotfiles/config/nvim/small_build/plugin_configs.vim
 "# Binds
 " Комбинация клавиш jkl - действует как Escape в режиме Insert
 imap jkl <ESC>
@@ -33,11 +32,6 @@ nmap <C-c> <plug>NERDCommenterToggle
 nmap <leader>z :Goyo<CR>
 
 """"PLUGINS BINDS""""
-
-""" ALE
-" Навигация между замеченными ошибками
-nmap <silent> <leader>j <Plug>(ale_next_wrap)
-nmap <silent> <leader>k <Plug>(ale_previous_wrap)
 
 """ Emmet
 " Активировать дополнение Emmet на Tab+e

@@ -1,4 +1,15 @@
 "# Plugins configs
+
+" Coc-bind-download
+
+" Функция для установки пакетов для COC
+function CocPacks()
+          :CocInstall coc-html coc-python coc-emmet coc-css coc-ccls coc-ultisnips
+  endf
+
+" Вызов функции с помощью <C-\>
+nmap <C-\> :call CocPacks()<CR>
+
 " ALE
 " Устанавливаем, как будет показываться ошибка и предупреждение
 let g:ale_sign_error = '>'
