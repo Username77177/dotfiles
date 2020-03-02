@@ -68,7 +68,7 @@ set t_Co=256
 syntax enable
 
 " Тема для **NeoVim**
-colorscheme Gruvbox
+colorscheme gruvbox
 
 "# UX config
 

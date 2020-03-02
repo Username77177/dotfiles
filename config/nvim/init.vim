@@ -32,6 +32,7 @@ nmap <C-c> <plug>NERDCommenterToggle
 
 nmap <leader>z :Goyo 150<CR>
 
+
 """"PLUGINS BINDS""""
 
 """ ALE

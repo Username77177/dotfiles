@@ -55,8 +55,8 @@ d/home/username77177/Videos
 	..
 0
 d/home/username77177
-	wallpaper.gif
-32
+	examples.desktop
+11
 d
 
 # Right window history (oldest to newest):
@@ -70,8 +70,8 @@ D/home/username77177/.config/dconf
 	..
 0
 D/home/username77177/.config
-	eog
-17
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -91,10 +91,13 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/username77177/.local/share/vifm/Trash/000_40-libinput.conf
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/home/username77177/.local/share/vifm/Trash/000_40-libinput.conf
+	/home/username77177/40-libinput.conf
 
 # State:
 f
