@@ -4,6 +4,9 @@ source ~/dotfiles/config/nvim/small_build/plugin_configs.vim
 " Комбинация клавиш jkl - действует как Escape в режиме Insert
 imap jkl <ESC>
 
+" Апгрейд линейки
+set relativenumber
+
 " Комбинация клавиш jks - действует как Escape + сохранение 
 " в режиме вставки
 imap jks <ESC>:w<CR>

@@ -13,16 +13,12 @@
 	/home/username77177/
 	..
 1582998996
-'z
-	/home/username77177/.config/vifm
-	..
-1582998996
 
 # Bookmarks:
 
 # TUI:
 al
-q0
+q1
 v2
 ov
 m-1
@@ -31,73 +27,536 @@ r2
 
 # Left window history (oldest to newest):
 d/home/username77177/.config/mpd
+	config
+1
+d/home/username77177/.config
+	dconf
+12
+d/home/username77177/.config/dconf
 	..
 0
 d/home/username77177/.config
-	bspwm
-8
-d/home/username77177/.config/bspwm
-	..
-0
-d/home/username77177/.config
-	..
-0
+	evolution
+10
 d/home/username77177
-	example.py
-27
+	..
+0
+d/home
+	username77177
+1
+d/
+	home
+5
+d/home
+	username77177
+1
+d/
+	lib
+6
 d/home
 	username77177
 1
 d/home/username77177
+	Dropbox
+4
+d/home/username77177/Dropbox
+	NASM_tutorial
+5
+d/home/username77177/Dropbox/NASM_tutorial
+	compile32
+4
+d/home/username77177/Dropbox
+	..
+0
+d/home/username77177
+	Downloads
+3
+d/home/username77177/Downloads
+	FiraCode_2
+1
+d/home/username77177
+	Downloads
+3
+d/home
+	username77177
+1
+d/home/username77177
+	Downloads
+3
+d/home/username77177/Downloads
+	FiraCode_2
+1
+d/home/username77177
+	Downloads
+3
+d/home
+	username77177
+1
+d/
+	home
+5
+d/home
+	username77177
+1
+d/home/username77177
+	Downloads
+3
+d/home/username77177/Downloads
+	daniele-buso-qzUenL35ZYw-unsplash.jpg
+8
+d/home/username77177
+	Downloads
+3
+d/home
+	username77177
+1
+d/home/username77177
+	Downloads
+3
+d/home/username77177/Downloads
+	FiraCode_2.zip
+5
+d/home/username77177
+	Dropbox
+4
+d/home/username77177/Dropbox
+	..
+0
+d/home/username77177
+	Dropbox
+4
+d/home/username77177/Dropbox
+	NASMPROGRAMMING
+4
+d/home/username77177/Dropbox/NASMPROGRAMMING
+	asmwithinput.asm
+5
+d/home/username77177/Dropbox
+	NASMPROGRAMMING
+4
+d/home/username77177
+	Dropbox
+4
+d/home
+	username77177
+1
+d/
+	proc
+11
+d/home/username77177
+	Dropbox
+4
+d/home/username77177/Dropbox
+	_ Getting Started with Dropbox Paper.paper
+9
+d/home/username77177
+	Dropbox
+4
+d/home/username77177/Dropbox
+	..
+0
+d/home/username77177
+	dotfiles
+10
+d/home/username77177/dotfiles
+	config
+1
+d/home/username77177/dotfiles/config
+	vifm
+9
+d/home/username77177/dotfiles/config/vifm
+	vifmrc
+4
+d/home/username77177/dotfiles/config
+	bspwm
+2
+d/home/username77177/dotfiles/config/bspwm
+	..
+0
+d/home/username77177/dotfiles/config
+	..
+0
+d/home/username77177/dotfiles
+	..
+0
+d/home/username77177
 	Videos
-13
+10
 d/home/username77177/Videos
 	..
 0
 d/home/username77177
-	examples.desktop
+	dotfiles
 11
+d/home/username77177/dotfiles
+	img
+3
+d/home/username77177
+	Downloads
+3
+d/home/username77177/Downloads
+	luca-bravo-hFzIoD0F_i8-unsplash.jpg
+13
+d/home/username77177
+	Downloads
+3
+d/home
+	username77177
+1
+d/home/username77177
+	dotfiles
+11
+d/home/username77177/dotfiles
+	config
+1
+d/home/username77177/dotfiles/config
+	i3
+4
+d/home/username77177/dotfiles/config/i3
+	..
+0
+d/home/username77177/dotfiles/config
+	i3
+4
+d/home/username77177/dotfiles
+	config
+1
+d/home/username77177/dotfiles/config
+	i3
+4
+d/home/username77177/dotfiles/config/i3
+	..
+0
+d/home/username77177/dotfiles/config
+	..
+0
+d/home/username77177/dotfiles
+	config
+1
 d
 
 # Right window history (oldest to newest):
 D/home/username77177/.config/mpd
-	config
-1
-D/home/username77177/.config
-	dconf
-12
-D/home/username77177/.config/dconf
 	..
 0
 D/home/username77177/.config
+	bspwm
+8
+D/home/username77177/.config/bspwm
+	..
+0
+D/home/username77177/.config
+	..
+0
+D/home/username77177
+	example.py
+27
+D/home
+	username77177
+1
+D/home/username77177
+	Videos
+13
+D/home/username77177/Videos
+	..
+0
+D/home/username77177
+	Templates
+8
+D/home/username77177/Templates
+	..
+0
+D/home/username77177
+	Templates
+8
+D/home/username77177/Templates
+	..
+0
+D/home/username77177
+	Pictures
+6
+D/home/username77177/Pictures
+	..
+0
+D/home/username77177
+	Downloads
+3
+D/home/username77177/Downloads
+	..
+0
+D/home/username77177
+	Downloads
+3
+D/home/username77177/Downloads
+	..
+0
+D/home/username77177
+	Videos
+9
+D/home
+	username77177
+1
+D/home/username77177
+	new
+12
+D/home/username77177/new
+	..
+0
+D/home/username77177
+	Downloads
+3
+D/home/username77177/Downloads
+	FiraCode_2.zip
+5
+D/home/username77177
+	gitprojects
+11
+D/home/username77177/gitprojects
+	learning
+1
+D/home/username77177/gitprojects/learning
+	nasm
+5
+D/home/username77177/gitprojects
+	learning
+1
+D/home/username77177
+	..
+0
+D/home
+	username77177
+1
+D/home/username77177
+	wallpapers
+13
+D/home/username77177/wallpapers
+	luca-bravo-hFzIoD0F_i8-unsplash.jpg
+1
+D/home/username77177
+	dotfiles
+10
+D/home/username77177/dotfiles
+	info.md
+9
+D/home/username77177
+	dotfiles
+10
+D/home/username77177/dotfiles
+	info.md
+9
+D/home/username77177
+	dotfiles
+10
+D/home
+	username77177
+1
+D/
+	home
+5
+D/home
+	username77177
+1
+D/home/username77177
+	..
+0
+D/home
+	username77177
+1
+D/home/username77177
+	Pictures
+6
+D/home/username77177/Pictures
+	..
+0
+D/home/username77177
+	Public
+7
+D/home/username77177/Public
+	..
+0
+D/home/username77177
+	snap
+12
+D/home
+	username77177
+1
+D/
+	media
+9
+D/media
+	username77177
+1
+D/media/username77177
+	..
+0
+D/media
+	username77177
+1
+D/media/username77177
+	..
+0
+D/media
+	..
+0
+D/
+	bin
+0
+D/bin
+	efibootmgr
+23
+D/
+	home
+5
+D/home
+	username77177
+1
+D/home/username77177
+	Videos
+9
+D/home
+	username77177
+1
+D/home/username77177
+	Videos
+9
+D/home/username77177/Videos
+	..
+0
+D/home/username77177
+	Dropbox
+4
+D/home/username77177/Dropbox
+	NASM_tutorial
+5
+D/home/username77177/Dropbox/NASM_tutorial
+	CHANGELOG.TXT
+1
+D/home/username77177/Dropbox
+	..
+0
+D/home/username77177
+	Music
+5
+D/home/username77177/Music
+	..
+0
+D/home/username77177
+	Music
+5
+D/home
+	username77177
+1
+D/home/username77177
+	Pictures
+6
+D/home/username77177/Pictures
+	..
+0
+D/home/username77177
+	Pictures
+6
+D/home
+	username77177
+1
+D/
+	boot
+1
+D/home/username77177
 	..
 0
 D
 
 # Command line history (oldest to newest):
-:help
 :colorscheme solarized
 :key
 :df
 :colorscheme
 :colorscheme Gruvbox
 :colorscheme Ph
+:set dotdirs
+:set ignorecase=1
+:set ignorecase
+:set ignorecase 1
+:set ignorecase true
+:set confirm
+:set relativenumber
+:set norelativenumber
+:trash
+:copy %C ./
+:mkcd new
+:set lines
+:set lines=12
+:set lines=40
+:set all
+:set milleroptions=csize:2
+:set milleroptions=lsize:0,csize:1,rsize:1
+:set viewcolumns 1
+:set vimhelp
+:help
+:home
+:h
+:find
+:setglobal incsearch
+:setglobal columns
+:setglobal columns=50
+:setglobal all
+:set columns
+:set viewcolumns=1
+:sibl
+:sibl"
+:siblnext
+:set sizefmt
+:lstrash
+:lsview
+:setglobal millerview
+:FZFlocate
+:FZFfind
+:set millerview
+:only off
+:on
+:set
+:set columns 
+:set lsview
+:set nolsview
+:set no
+:split
+:s
+:~
+:cd home
+:set viewcolumns
+:set viewcolumns=2
+:view on
+:view=true
+:set 
+:only
+:sp
+:vs
+:set nomillerview
+:cd ~
+:highlight
+:highlight Win
+:ls -a
+:set fusehome
+:view
 :q
 
 # Search history (oldest to newest):
+/public
+/Test
+/desk
 
 # Prompt history (oldest to newest):
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/username77177/.local/share/vifm/Trash/000_40-libinput.conf
+""/home/username77177/.local/share/vifm/Trash/000_new
 
 # Directory stack (oldest to newest):
 
 # Trash content:
-t/home/username77177/.local/share/vifm/Trash/000_40-libinput.conf
-	/home/username77177/40-libinput.conf
+t/home/username77177/.local/share/vifm/Trash/000_new
+	/home/username77177/new
 
 # State:
 f

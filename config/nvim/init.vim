@@ -5,6 +5,9 @@ source ~/dotfiles/config/nvim/big_build/coc_settings.vim
 " Комбинация клавиш jkl - действует как Escape в режиме Insert
 imap jkl <ESC>
 
+" Апгрейд линейки
+set relativenumber
+
 " Комбинация клавиш jks - действует как Escape + сохранение 
 " в режиме вставки
 imap jks <ESC>:w<CR>

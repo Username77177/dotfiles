@@ -10,10 +10,19 @@
 "Editor
 set vicmd=nvim
 
+" Предпросмотр следующей папки
+" set millerview
+" set milleroptions=lsize:0,rsize:1,csize:1
+" set viewcolumns
+" view
+
+" Продвинутая линейка
+set relativenumber
+
 "Trash
 set trash
 
-" This is how many directories to store in the directory history.
+" Сколько значений хранится в истории
 set history=100
 
 " Automatically resolve symbolic links on l or Enter.
@@ -38,7 +47,7 @@ set novimhelp
 set runexec
 
 " Selected color scheme
-colorscheme Ph
+colorscheme Gruvbox
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%d/%m/%y|%H:%M
@@ -62,8 +71,8 @@ set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
 set ignorecase
 set smartcase
 
-" Don't highlight search results automatically
-set nohlsearch
+" Подсвечивать поиск
+set hlsearch
 
 " Use increment searching (search while typing)
 set incsearch
@@ -111,6 +120,10 @@ command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart
+
+" FZF support
+command! FZFlocate :set noquickview | :execute 'goto "'.system('locate $HOME | fzf --height 10 2>/dev/tty ').'"%IU' | redraw
+command! FZFfind :set noquickview | :execute 'goto "'.system('find | fzf --height 10 2>/dev/tty ').'"%IU' | redraw
 
 " ------------------------------------------------------------------------------
 
@@ -414,6 +427,8 @@ nnoremap <f5> :copy<cr>
 nnoremap <f6> :move<cr>
 nnoremap <f7> :mkdir<space>
 nnoremap <f8> :delete<cr>
+
+nnoremap <C-s> :vs<cr>:view<cr>
 
 " ------------------------------------------------------------------------------
 

@@ -4,7 +4,7 @@
 # Path to your oh-my-zsh installation.
 bindkey -v
 export ZSH=".oh-my-zsh"
-export EDITOR="emacs"
+export EDITOR="nvim"
 
 # Aliases
 alias -g Dd='~/dotfiles'
