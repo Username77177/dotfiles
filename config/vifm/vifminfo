@@ -293,6 +293,15 @@ d/home/username77177
 d/home/username77177/Public
 	..
 0
+d/home/username77177
+	usbbackup
+11
+d/home/username77177/usbbackup
+	2020
+1
+d/home/username77177/usbbackup/2020
+	Индивидулка (наверное).docx
+1
 d
 
 # Right window history (oldest to newest):
@@ -610,6 +619,10 @@ D
 : 
 :!mount /dev/sdb1 ./Public/
 :!sudo mount /dev/sdb1 ./Public/
+:rename Индивидулка (наверное)
+:rename Индивидулка\ \(наверное\)
+:rename Индивидулка (наверное).docx
+:rename Индивидулка\ \(наверное\).docx
 :q
 
 # Search history (oldest to newest):
