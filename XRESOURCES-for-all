@@ -62,7 +62,7 @@ rofi.fake-transparency: false
 rofi.yoffset:           0
 rofi.xoffset:           0
 rofi.opacity:           50
-rofi.font:              Fira Code Regular 15
+rofi.font:              JetBrains Mono 15
 
 
 ! Base16 Gruvbox

@@ -288,8 +288,11 @@ d/home/username77177/surfhouse-template
 	psd
 3
 d/home/username77177
-	snap
-16
+	Public
+6
+d/home/username77177/Public
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -605,6 +608,8 @@ D
 :set fusehome
 :view
 : 
+:!mount /dev/sdb1 ./Public/
+:!sudo mount /dev/sdb1 ./Public/
 :q
 
 # Search history (oldest to newest):
