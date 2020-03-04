@@ -2,6 +2,8 @@ call plug#begin() " NERDTree - быстрый просмотр файлов Plug
 
 " Просмотр папок
 Plug 'preservim/nerdtree'
+"" Дополнение к NERDTree (Git Integration)
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Нормальная визуализация табов
 Plug 'Yggdroot/indentLine'

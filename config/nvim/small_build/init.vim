@@ -1,5 +1,6 @@
 source ~/dotfiles/config/nvim/small_build/plugins.vim
 source ~/dotfiles/config/nvim/small_build/plugin_configs.vim
+source ~/dotfiles/config/nvim/small_build/coc_settings.vim
 "# Binds
 " Комбинация клавиш jkl - действует как Escape в режиме Insert
 imap jkl <ESC>
@@ -10,6 +11,12 @@ set relativenumber
 " Комбинация клавиш jks - действует как Escape + сохранение 
 " в режиме вставки
 imap jks <ESC>:w<CR>
+
+" Передвижение между окнами Ctrl+hjkl
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " F2 чтобы выходить из PasteMode (мод для вставки текста)
 set pastetoggle=<F2>
@@ -26,27 +33,26 @@ inoremap ( ()<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
+
+
+""""PLUGINS BINDS""""
+
+""" NERDTree
 " В нормальном режиме Space+f вызывает :NERDTree
 " Ctrl+c - комментирует строки
 nmap <leader>f :NERDTreeToggle<CR>
 vmap <C-c> <plug>NERDCommenterToggle
 nmap <C-c> <plug>NERDCommenterToggle
 
-nmap <leader>z :Goyo<CR>
-
-""""PLUGINS BINDS""""
+""" Goyo
+nmap <leader>z :Goyo 150<CR>
 
 """ Emmet
 " Активировать дополнение Emmet на Tab+e
 " Использовать Emmet (автодополнить код)
 let g:user_emmet_expandabbr_key = '<tab>e'
 
-""" UltiSnips
-let g:UltiSnipsJumpForwardTrigger = "<C-j>"
-let g:UltiSnipsJumpBackwardTrigger = "<C-n>"
-let g:UltiSnipsExpandTrigger = "<tab>"
-
-"""""
+""" 
 
 "# UI config
 
@@ -56,13 +62,16 @@ set t_Co=256
 syntax enable
 
 " Тема для **NeoVim**
-colorscheme OceanicNext
+colorscheme oceanic-next
 
 "# UX config
 
 " Делаем автозапуск Omnifunc (автодополнение)
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+
+" Vim теперь использует нормальное копирование (системный буфер)
+set clipboard=unnamedplus
 
 " Делаем нормальные табы
 set expandtab
@@ -74,3 +83,7 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" Нормальный поиск
+set ignorecase
+set smartcase
+set wildmode=full

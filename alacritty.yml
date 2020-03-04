@@ -7,7 +7,7 @@ window:
   dynamic_padding: false
   decorations: full
   #Режим полного экрана
-  startup_mode: Maximized
+  startup_mode: Windowed
   scrolling:
         history: 10000
         multiplier: 3
@@ -20,9 +20,9 @@ window:
 font:
         #Настройка шрифтов
   normal:
-      family: "Fira Code"
+      family: "JetBrains Mono"
   bold:
-    family: "Fira Code"
+    family: "JetBrains Mono"
   italic:
     family: "Fira Code"
 

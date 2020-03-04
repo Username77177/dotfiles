@@ -43,10 +43,14 @@ set recolor                     "true"
 # Начальная ширина
 set window-width 1000
 # Расширение файла в окне по высоте
-set adjust-open "width"
+set adjust-open "best-fit"
 # Отступ между страницами
 set page-padding 1
 # Страниц на строку
 set pages-per-row 1
 # Шрифт
-set font "Fira Code 14"
+set font "JetBrains Mono 14"
+# $HOME = ~
+set window-title-home-tilde true
+# То, что выделяется, сразу идёт в буфер обмена
+set selection-clipboard clipboard

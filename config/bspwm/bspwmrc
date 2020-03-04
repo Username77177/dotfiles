@@ -37,6 +37,7 @@ bspc config focus_follows_pointer true
 #FM##
 bspc rule -a Nautilus desktop=^1
 bspc rule -a Alacritty:ranger state=floating follow=on sticky=on
+bspc rule -a Alacritty:vifm state=floating follow=on sticky=on
 #WEB##
 bspc rule -a Firefox desktop=^2
 ##Firefox Tweaks##
@@ -50,15 +51,16 @@ bspc rule -a Chromium desktop=^2
 bspc rule -a TelegramDesktop desktop=^1 follow=on
 bspc rule -a discord desktop=^1
 #TERMINALS##
-bspc rule -a Alacritty desktop=^3 follow=on
-bspc rule -a xterm desktop=^3 follow=on
+bspc rule -a Alacritty desktop=^3 follow=on state=tiled
+bspc rule -a xterm desktop=^3 follow=on state=tiled
 #EDITORS##
 bspc rule -a Emacs desktop=^4 follow=on state=tiled
 bspc rule -a vim desktop=^4 follow=on
 bpsc rule -a nvim desktop=^4 follow=on
-bspc rule -a Code desktop=^4 follow=on
+bspc rule -a Code desktop=^4 follow=on state=fullscreen
 #OTHER THINGS
 bspc rule -a Pavucontrol state=floating
+bspc rule -a Zathura state=tiled focus=on
 
 #FOR ALL WINDOWS
 bspc rule -a * follow=on layer=above state=floating

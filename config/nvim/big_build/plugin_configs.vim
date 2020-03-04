@@ -1,7 +1,15 @@
 "# Plugins configs
 
-" Coc-bind-download
+" NERDTree
+" Размер NERDTree
+let g:NERDTreeWinSize=30
+" NERDTree справа
+let g:NERDTreeWinPos = "right"
+" Немного украсим NERDTree
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
+" Coc-bind-download
 " Функция для установки пакетов для COC
 function CocPacks()
           :CocInstall coc-html coc-python coc-emmet coc-css coc-ccls coc-ultisnips
@@ -49,6 +57,7 @@ let g:NERDTrimTrailingWhitespace = 1
 " Если линия все ещё сожержит комментарий (его знак или знаки), то
 " расскоментировать далее эту строку (строки)
 let g:NERDToggleCheckAllLines = 1
+
 
 " Deoplete
 " Запускать Deoplete при запуске

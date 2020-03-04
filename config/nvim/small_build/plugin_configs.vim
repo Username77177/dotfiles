@@ -1,4 +1,14 @@
 "# Plugins configs
+
+" NERDTree
+" Размер NERDTree
+let g:NERDTreeWinSize=30
+" NERDTree справа
+let g:NERDTreeWinPos = "right"
+" Немного преукрасим NERDTree
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
 " Emmet
 let g:user_emmet_mode='i'    "Активировать Emmet только в режиме ввода
 " Активировать Emmet только в файлах .html, .css

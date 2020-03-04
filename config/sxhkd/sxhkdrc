@@ -25,7 +25,10 @@ super + shift + e
 	emacs -fn 'Fira Code'
 
 super + shift + m
-	alacritty --class 'vifm' -e ranger
+	alacritty --class 'ranger' -e ranger
+
+super + shift + v
+    alacritty --class 'vifm' -e vifm
 
 super + shift + n
 	nautilus
@@ -41,6 +44,9 @@ super + shift + d
 
 super + shift + c
     code
+
+super + shift + z
+    zathura
 
 # Sound
 XF86AudioMute

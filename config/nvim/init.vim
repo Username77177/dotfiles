@@ -12,6 +12,12 @@ set relativenumber
 " в режиме вставки
 imap jks <ESC>:w<CR>
 
+" Передвижение между окнами Ctrl+hjkl
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " F2 чтобы выходить из PasteMode (мод для вставки текста)
 set pastetoggle=<F2>
 
@@ -79,6 +85,9 @@ colorscheme gruvbox
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
+" Vim теперь использует нормальное копирование (системный буфер)
+set clipboard=unnamedplus
+
 " Делаем нормальные табы
 set expandtab
 set smarttab
@@ -89,3 +98,7 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" Нормальный поиск
+set ignorecase
+set smartcase
+set wildmode=full
