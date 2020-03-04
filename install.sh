@@ -36,11 +36,11 @@ if [[ $1 = "config" ]]; then
     ln -sfr config/bspwm ~/.config/
     ln -sfr config/sxhkd ~/.config/
     ln -sfr config/vifm ~/.config/
-    ln -sfr config/awesome/ ~/.config/
     ln -sfr config/vifm/ ~/.config/
     ln -sfr config/zathura/ ~/.config/
     ln -sfr config/ranger/ ~/.config/
     ln -sfr config/omf/ ~/.config/
+    ln -sfr config/Code ~/.config/
 
 elif [[ $1 = "install" ]]; then
     echo "Terminal install"

@@ -1,0 +1,17 @@
+#Plain.text
+
+Atom Keymap
+Auto Rename Tags
+Better Comments
+C/C++
+C++ Intellisense
+Gruvbox Themes
+HTML CSS Support
+LaTeX Workshop
+Live Server
+Markdownlint
+Prettier
+Project Manager
+Python
+Visual Studio Intellisense
+vscode-icons
