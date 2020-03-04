@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 if [[ $1 = "config" ]]; then
+    echo "If you want nice UI, then install JetBrains Mono"
+    echo "https://www.jetbrains.com/lp/mono"
+    sleep 3
 
     #Mouse tweaks
     sudo cp 40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf
@@ -110,10 +113,6 @@ elif [[ $1 = "install" ]]; then
         # Ohmyzsh Install
         cd ~
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-        git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten
-        ln -s "$ZSH_CUSTOM/themes/typewritten/typewritten.zsh-theme" "$ZSH_CUSTOM/themes/typewritten.zsh-theme"
-        export TYPEWRITTEN_CURSOR="beam"
-        export TYPEWRITTEN_MULTILINE=true
     elif [[ $input = "2" ]]; then
         cd ~
         curl -L https://get.oh-my.fish | fish
