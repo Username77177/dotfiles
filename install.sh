@@ -3,6 +3,10 @@
 if [[ $1 = "config" ]]; then
     echo "If you want nice UI, then install JetBrains Mono"
     echo "https://www.jetbrains.com/lp/mono"
+    echo "For Polybar you can install font-awesome"
+    echo "https://fontawesome.com/start"
+    echo "Also, if you want, you can download Dropbox"
+    echo "https://www.dropbox.com/en/install"
     sleep 3
 
     #Mouse tweaks
