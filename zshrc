@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 bindkey -v
-export ZSH=".oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="nvim"
 
 # Aliases
@@ -21,7 +21,11 @@ alias -g rt='restore-trash' #Restore Trash
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+
+ZSH_THEME="amuse"
+# Для темы Typewritten:
+#export TYPEWRITTEN_CURSOR="underscore"
+#export TYPEWRITTEN_MULTILINE=true
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

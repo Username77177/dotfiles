@@ -81,3 +81,14 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
+
+" JS-Beautify
+autocmd FileType javascript noremap <buffer>  <leader>b :call JsBeautify()<cr>
+" for json
+autocmd FileType json noremap <buffer> <leader>b :call JsonBeautify()<cr>
+" for jsx
+autocmd FileType jsx noremap <buffer> <leader>b :call JsxBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <leader>b :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <leader>b :call CSSBeautify()<cr>

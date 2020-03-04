@@ -1,8 +1,8 @@
 #!/bin/sh
 # XWINWRAP and bind-programm
 sxhkd &
-$HOME/bspwm-ground-config/save_your_eyes.sh &
-$HOME/bspwm-ground-config/notes.sh show &
+$HOME/dotfiles/scripts/save_your_eyes.sh &
+$HOME/dotfiles/scripts/notes.sh show &
 #xwinwrap -g 1920x1080 -ov -ni -s -nf --gifview -w WID ~/wallpaper.gif -a &
 
 #Создайте папку ~/wallpapers и поместите туда обои. Они будут выбираться случайно
@@ -21,7 +21,6 @@ setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle &
 alacritty &
 #emacs26 &
 code &
-bspc desktop -f ^1 &
 
 bspc monitor -d Desktop Web Terminal Editors
 

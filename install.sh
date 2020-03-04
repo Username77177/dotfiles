@@ -3,7 +3,7 @@
 if [[ $1 = "config" ]]; then
 
     #Mouse tweaks
-    sudo ln -sfr config/40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf
+    sudo cp 40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf
     
     # Home directory configure
     ln -sfr tmux.conf ~/.tmux.conf 
@@ -37,6 +37,7 @@ if [[ $1 = "config" ]]; then
     ln -sfr config/vifm/ ~/.config/
     ln -sfr config/zathura/ ~/.config/
     ln -sfr config/ranger/ ~/.config/
+    ln -sfr config/omf/ ~/.config/
 
 elif [[ $1 = "install" ]]; then
     echo "Terminal install"
@@ -103,9 +104,21 @@ elif [[ $1 = "install" ]]; then
 
     echo "Warning! If you on Ubuntu < 19, then add nvim repo from launchpad and reinstall programm"
     sleep 3
-    # Ohmyzsh Install
-    cd ~
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    echo "Install zsh [1] or fish [2] or nothing [anything else]: "
+    read input
+    if [[ $input = "1" ]]; then
+        # Ohmyzsh Install
+        cd ~
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten
+        ln -s "$ZSH_CUSTOM/themes/typewritten/typewritten.zsh-theme" "$ZSH_CUSTOM/themes/typewritten.zsh-theme"
+        export TYPEWRITTEN_CURSOR="beam"
+        export TYPEWRITTEN_MULTILINE=true
+    elif [[ $input = "2" ]]; then
+        cd ~
+        curl -L https://get.oh-my.fish | fish
+    fi
+
 fi
 
 

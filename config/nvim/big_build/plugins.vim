@@ -20,6 +20,9 @@ Plug 'morhetz/gruvbox'
 " CSS/SCSS/HTML подсветка цвета 
 Plug 'gorodinskiy/vim-coloresque'
 
+" HTML, CSS, JS beautify ( нормальное форматирование )
+Plug 'maksimr/vim-jsbeautify'
+
 " Zen mode
 Plug 'junegunn/goyo.vim'
 
