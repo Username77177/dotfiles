@@ -51,11 +51,20 @@ elif [[ $1 = "install" ]]; then
     sleep 1
     sudo add-apt-repository ppa:mmstick76/alacritty
 
-    # Polybar dependecies and more
-    sudo apt install compton rofi trash-cli alacritty tmux nodejs python3 vifm zsh scrot firefox xclip cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev dunst pavucontrol zathura
+    # Main tools
+    sudo apt install compton rofi trash-cli alacritty tmux nodejs python3 vifm zsh scrot firefox xclip dunst pavucontrol zathura curl
 
-    # Polybar install 
-    git clone https://github.com/polybar/polybar.git ~/.polybar && ~/.polybar/build.sh
+    echo "Install polybar? [1 - yes]"
+    read input
+    if [[ $input = "1" ]]; then
+        #Dependecies
+        sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
+        #Optional Dependecies
+        sudo apt install libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
+
+        # Polybar install 
+        git clone https://github.com/polybar/polybar.git ~/.polybar && ~/.polybar/build.sh
+    fi
 
     # Nvim Install
     echo "Neovim install"
