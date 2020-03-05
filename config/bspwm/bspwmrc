@@ -1,8 +1,8 @@
 #!/bin/sh
 # XWINWRAP and bind-programm
 sxhkd &
-#killall -q save_your_eyes.sh &
-#killall -q notes.sh &
+killall -q save_your_eyes.sh &
+killall -q notes.sh &
 $HOME/dotfiles/scripts/save_your_eyes.sh &
 $HOME/dotfiles/scripts/notes.sh show &
 #xwinwrap -g 1920x1080 -ov -ni -s -nf --gifview -w WID ~/wallpaper.gif -a &
@@ -22,7 +22,7 @@ setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle &
 # Startup
 alacritty &
 #emacs26 &
-code &
+#code &
 
 bspc monitor -d Desktop Web Terminal Editors
 

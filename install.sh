@@ -46,13 +46,16 @@ if [[ $1 = "config" ]]; then
     ln -sfr config/omf/ ~/.config/
     ln -sfr config/Code ~/.config/
 
+    # PostInstall
+    mkdir ~/gitprojects ~/wallpapers
+
 elif [[ $1 = "install" ]]; then
     echo "Terminal install"
     sleep 1
     sudo add-apt-repository ppa:mmstick76/alacritty
 
     # Main tools
-    sudo apt install compton rofi trash-cli alacritty tmux nodejs python3 vifm zsh scrot firefox xclip dunst pavucontrol zathura curl wget htop
+    sudo apt install compton rofi trash-cli alacritty tmux nodejs python3 vifm zsh scrot firefox xclip dunst pavucontrol zathura curl wget htop latexmk
 
     echo "Install polybar? [1 - yes]"
     read input
