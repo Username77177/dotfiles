@@ -8,7 +8,8 @@ super + Return
 
 # program launcher
 alt + Tab
-	rofi -show window -show-icons -drun-icon-theme Mojave-CT-Night-Mode
+# Space for choose window
+    rofi -show window -show-icons -drun-icon-theme Mojave-CT-Night-Mode -kb-accept-entry space
 
 super + d
 	rofi -show drun -show-icons -drun-icon-theme Mojave-CT-Night-Mode

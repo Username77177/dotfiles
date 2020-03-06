@@ -8,6 +8,7 @@ export EDITOR="nvim"
 
 # Aliases
 alias -g Dd='~/dotfiles'
+alias -g gpp='~/gitprojects/'
 alias -g em='emacs26'
 alias -g fr='firefox'
 alias -g es='pkill save_your_eyes.sh'

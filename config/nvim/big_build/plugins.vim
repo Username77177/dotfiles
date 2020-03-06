@@ -27,6 +27,7 @@ Plug 'maksimr/vim-jsbeautify'
 
 " Zen mode
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 " Git Integration
 Plug 'airblade/vim-gitgutter'

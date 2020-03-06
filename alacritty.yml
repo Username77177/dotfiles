@@ -26,20 +26,20 @@ font:
   italic:
     family: "Fira Code"
 
+  size: 9
   # Размер шрифта
-    size: 10.0
 
   #Отступы у шрифта
-  offset:
+offset:
     x: 0
     y: 0
 
-  glyph_offset:
+glyph_offset:
     x: 0
     y: 0
   
-  # Печатать жирный текст яркими шрифтами  
-  draw_bold_text_with_bright_colors: true 
+# Печатать жирный текст яркими шрифтами  
+draw_bold_text_with_bright_colors: true 
 
 hide_when_typing: true
 # Темы были взяты отсюда https://github.com/eendroroy/alacritty-theme
@@ -172,3 +172,5 @@ shell:
         args:
                 - -c
                 - tmux
+env:
+    WINIT_X11_SCALE_FACTOR: "1.75"

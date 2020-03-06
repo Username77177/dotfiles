@@ -65,6 +65,49 @@ rofi.opacity:           50
 rofi.font:              JetBrains Mono 15
 
 
+!!!!!!! URxvt !!!
+
+! Addons ()
+URxvt.perl-ext-common: default,matcher,font-size,url-select,clipboard
+
+! Binds
+URxvt.keysym.M-c:            perl:clipboard:copy
+URxvt.keysym.M-v:            perl:clipboard:paste
+URxvt.keysym.Home:          \033[1~
+URxvt.keysym.End:           \033[4~
+URxvt.keysym.Control-Up:    \033[1;5A
+URxvt.keysym.Control-Down:  \033[1;5B
+URxvt.keysym.Control-Left:  \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
+
+! Font and scrollbar
+URxvt.font:xft:JetBrains Mono:style=Regular:pixelsize=12,xft:Terminus:pixelsize=12
+URxvt.boldFont:xft:JetBrains Mono:style=Bold:size=12
+URxvt.italicFont:xft:JetBrains Mono:style=Italic:size=12
+URxvt.boldItalicFont:xft:JetBrains Mono:style=Bold Italic:size=12
+URxvt.letterSpace: -1
+URxvt.lineSpace: 0
+
+
+! Web Configurations
+URxvt.url-launcher:/usr/bin/firefox
+URxvt.underlineURLs:true
+URxvt.iso14755:              false
+URxvt.iso14755_52:           false
+
+! Appearance
+URxvt.InternalBorder:1
+URxvt.scrollBar: false
+URxvt*title: URxvt
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+
+
+
+
+
+
+
 ! Base16 Gruvbox
 ! Scheme: Gordon Chiam (https://github.com/gchiam)
 
