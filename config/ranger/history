@@ -4,3 +4,8 @@ set automatically_count_files
 set draw_borders true
 set use_preview_script true
 open_with 
+rename SwitchOperatorGr.png
+mkcd
+mkdir img
+rename
+rename Game_designers_carbon.png

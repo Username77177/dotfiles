@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head>
+    <title>Feeder - RSS Feed Reader</title>
+    <ownerEmail>username77177@gmail.com</ownerEmail>
+    <dateCreated>2020-03-07T09:35:55Z</dateCreated>
+  </head>
+  <body>
+    <outline text="The Verge -  All Posts" title="The Verge -  All Posts" type="rss" xmlUrl="http://www.theverge.com/rss/index.xml" htmlUrl="http://www.theverge.com/" rssfr-numPosts="0" rssfr-favicon="https://icons.feedercdn.com/www.theverge.com" rssfr-useNotifications="0" rssfr-updateInterval="600000"/>
+    <outline text="Best of reddit" title="Best of reddit" type="rss" xmlUrl="http://www.reddit.com/r/bestof/.rss" htmlUrl="https://www.reddit.com/r/bestof/" rssfr-numPosts="30" rssfr-favicon="https://icons.feedercdn.com/www.reddit.com" rssfr-useNotifications="0" rssfr-updateInterval="600000"/>
+    <outline text="Хабр / Лучшие публикации за сутки" title="Хабр / Лучшие публикации за сутки" type="rss" xmlUrl="https://habr.com/rss/best/" htmlUrl="https://habr.com/posts/top/" rssfr-numPosts="30" rssfr-favicon="https://icons.feedercdn.com/habr.com" rssfr-useNotifications="0" rssfr-updateInterval="600000"/>
+    <outline text="DTF: все новости и статьи" title="DTF: все новости и статьи" type="rss" xmlUrl="https://dtf.ru/rss/all" htmlUrl="https://dtf.ru/" rssfr-numPosts="30" rssfr-favicon="https://icons.feedercdn.com/dtf.ru" rssfr-useNotifications="0" rssfr-updateInterval="600000"/>
+    <outline text="New York" title="New York" type="rss" xmlUrl="https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/nyregion/rss.xml" htmlUrl="https://www.nytimes.com/section/nyregion" rssfr-numPosts="30" rssfr-favicon="https://icons.feedercdn.com/www.nytimes.com" rssfr-useNotifications="0" rssfr-updateInterval="600000"/>
+    <outline text="4PDA" title="4PDA" type="rss" xmlUrl="http://4pda.ru/feed/" htmlUrl="http://4pda.ru/" rssfr-numPosts="30" rssfr-favicon="https://icons.feedercdn.com/4pda.ru" rssfr-useNotifications="0" rssfr-updateInterval="600000"/>
+    <outline text="Лайфхакер" title="Лайфхакер" type="rss" xmlUrl="https://lifehacker.ru/feed/" htmlUrl="https://lifehacker.ru" rssfr-numPosts="30" rssfr-favicon="https://icons.feedercdn.com/lifehacker.ru" rssfr-useNotifications="0" rssfr-updateInterval="600000"/>
+    <outline text="Типичный программист" title="Типичный программист" type="rss" xmlUrl="https://tproger.ru/feed/" htmlUrl="https://tproger.ru" rssfr-numPosts="30" rssfr-favicon="https://icons.feedercdn.com/tproger.ru" rssfr-useNotifications="0" rssfr-updateInterval="600000"/>
+  </body>
+</opml>

@@ -19,6 +19,7 @@ if [[ $1 = "config" ]]; then
     ln -sfr XRESOURCES-for-all ~/.Xresources
     ln -sfr zshrc ~/.zshrc
     ln -sfr config/ncmpcpp ~/
+    ln -sfr config/newsbeuter ~/
     
     # .config directory configure
     ln -sfr ./config/dunst ~/.config/

@@ -31,54 +31,6 @@ r2
 
 # Left window history (oldest to newest):
 d/home/username77177
-	new
-12
-d/home/username77177/new
-	..
-0
-d/home/username77177
-	Downloads
-3
-d/home/username77177/Downloads
-	FiraCode_2.zip
-5
-d/home/username77177
-	gitprojects
-11
-d/home/username77177/gitprojects
-	learning
-1
-d/home/username77177/gitprojects/learning
-	nasm
-5
-d/home/username77177/gitprojects
-	learning
-1
-d/home/username77177
-	..
-0
-d/home
-	username77177
-1
-d/home/username77177
-	wallpapers
-13
-d/home/username77177/wallpapers
-	luca-bravo-hFzIoD0F_i8-unsplash.jpg
-1
-d/home/username77177
-	dotfiles
-10
-d/home/username77177/dotfiles
-	info.md
-9
-d/home/username77177
-	dotfiles
-10
-d/home/username77177/dotfiles
-	info.md
-9
-d/home/username77177
 	dotfiles
 10
 d/home
@@ -328,8 +280,56 @@ d/home/username77177
 	Downloads
 4
 d/home/username77177/Downloads
-	JetBrainsMono-1.0.3.zip
-6
+	carbon.png
+3
+d/home/username77177
+	gitprojects
+12
+d/home/username77177/gitprojects
+	learning
+1
+d/home/username77177/gitprojects/learning
+	cpp
+4
+d/home/username77177/gitprojects/learning/cpp
+	cpp_in_a_week_mainfolder
+2
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder
+	..
+0
+d/home/username77177/gitprojects/learning/cpp
+	cpp_in_a_week_mainfolder
+2
+d/home/username77177/gitprojects/learning
+	cpp
+4
+d/home/username77177/gitprojects/learning/cpp
+	cpp_in_a_week_mainfolder
+2
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder
+	img
+1
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder/img
+	..
+0
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder
+	img
+1
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder/img
+	..
+0
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder
+	img
+1
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder/img
+	..
+0
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder
+	img
+1
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder/img
+	SwitchOperatorGr.png
+4
 d
 
 # Right window history (oldest to newest):
@@ -577,8 +577,26 @@ D/home/username77177
 	Downloads
 4
 D/home/username77177/Downloads
-	john-christian-fjellestad-mr1sq1fBcTk-unsplash.jpg
-12
+	AnonymousPro.zip
+1
+D/home/username77177
+	Downloads
+4
+D/home/username77177/Downloads
+	Die_roller_carbon.png
+2
+D/home/username77177
+	Downloads
+4
+D/home/username77177/Downloads
+	Guess_the_number_carbon.png
+4
+D/home/username77177
+	Downloads
+4
+D/home/username77177/Downloads
+	Guess_the_number_carbon.png
+4
 D
 
 # Command line history (oldest to newest):
@@ -670,6 +688,10 @@ D
 :q:q
 :::q
 :move ../wallpapers/
+:rename Die_roller_carbon.png
+:rename Guess_the_number_carbon.png
+:renam
+:w
 :q
 
 # Search history (oldest to newest):
@@ -682,13 +704,17 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/username77177/.local/share/vifm/Trash/000_new
+""/home/username77177/.local/share/vifm/Trash/000_Guess_the_number_carbon.png
 
 # Directory stack (oldest to newest):
 
 # Trash content:
 t/home/username77177/.local/share/vifm/Trash/000_new
 	/home/username77177/new
+t/home/username77177/.local/share/vifm/Trash/000_Die_roller_carbon.png
+	/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder/Die_roller_carbon.png
+t/home/username77177/.local/share/vifm/Trash/000_Guess_the_number_carbon.png
+	/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder/Guess_the_number_carbon.png
 
 # State:
 f
