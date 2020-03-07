@@ -22,7 +22,7 @@
 
 # TUI:
 al
-q1
+q0
 v2
 ov
 m-1
@@ -30,21 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/username77177/Downloads
-	..
-0
-d/home/username77177
-	Downloads
-3
-d/home/username77177/Downloads
-	..
-0
-d/home/username77177
-	Videos
-9
-d/home
-	username77177
-1
 d/home/username77177
 	new
 12
@@ -328,8 +313,23 @@ d/home/username77177/Downloads
 	marat-gilyadzinov-MYadhrkenNg-unsplash.jpg
 7
 d/home/username77177
-	.ICEauthority
+	Downloads
+4
+d/home/username77177/Downloads
+	steam_latest.deb
 15
+d/home/username77177
+	Downloads
+4
+d/home
+	username77177
+1
+d/home/username77177
+	Downloads
+4
+d/home/username77177/Downloads
+	JetBrainsMono-1.0.3.zip
+6
 d
 
 # Right window history (oldest to newest):
@@ -578,7 +578,7 @@ D/home/username77177
 4
 D/home/username77177/Downloads
 	john-christian-fjellestad-mr1sq1fBcTk-unsplash.jpg
-6
+12
 D
 
 # Command line history (oldest to newest):
@@ -667,9 +667,10 @@ D
 :mkdir 1course
 :mkdir 2
 :mkdir pe programming web
-:q
 :q:q
 :::q
+:move ../wallpapers/
+:q
 
 # Search history (oldest to newest):
 /public

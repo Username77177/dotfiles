@@ -4,6 +4,7 @@ sxhkd &
 killall -q save_your_eyes.sh &
 killall -q notes.sh &
 $HOME/dotfiles/scripts/save_your_eyes.sh &
+$HOME/dotfiles/scripts/save_your_eyes_light.sh &
 $HOME/dotfiles/scripts/notes.sh show &
 #xwinwrap -g 1920x1080 -ov -ni -s -nf --gifview -w WID ~/wallpaper.gif -a &
 

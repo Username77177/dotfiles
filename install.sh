@@ -18,6 +18,7 @@ if [[ $1 = "config" ]]; then
     ln -sfr vimrc.old ~/.vimrc
     ln -sfr XRESOURCES-for-all ~/.Xresources
     ln -sfr zshrc ~/.zshrc
+    ln -sfr config/ncmpcpp ~/
     
     # .config directory configure
     ln -sfr ./config/dunst ~/.config/

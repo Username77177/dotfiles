@@ -4,3 +4,5 @@ __pycache__
 config/nvim/plugged
 config/Code/!(settings.json)
 config/Code/*
+config/ranger/history
+config/vifm/vifminfo
