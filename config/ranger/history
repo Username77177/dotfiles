@@ -3,3 +3,4 @@ set preview_images true
 set automatically_count_files
 set draw_borders true
 set use_preview_script true
+open_with 
