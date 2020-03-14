@@ -30,12 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/username77177
-	dotfiles
-10
-d/home
-	username77177
-1
 d/
 	home
 5
@@ -328,8 +322,14 @@ d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder
 	img
 1
 d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder/img
-	SwitchOperatorGr.png
-4
+	..
+0
+d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder
+	..
+0
+d/home/username77177/gitprojects/learning/cpp
+	.vscode
+1
 d
 
 # Right window history (oldest to newest):
@@ -595,19 +595,23 @@ D/home/username77177
 	Downloads
 4
 D/home/username77177/Downloads
-	Guess_the_number_carbon.png
+	AnonymousPro.zip
+1
+D/home/username77177
+	Downloads
+4
+D/home/username77177/Downloads
+	AnonymousPro.zip
+1
+D/home/username77177
+	Downloads
+4
+D/home/username77177/Downloads
+	pdf2png
 4
 D
 
 # Command line history (oldest to newest):
-:colorscheme solarized
-:key
-:df
-:colorscheme
-:colorscheme Gruvbox
-:colorscheme Ph
-:set dotdirs
-:set ignorecase=1
 :set ignorecase
 :set ignorecase 1
 :set ignorecase true
@@ -625,7 +629,6 @@ D
 :set milleroptions=lsize:0,csize:1,rsize:1
 :set viewcolumns 1
 :set vimhelp
-:help
 :home
 :h
 :find
@@ -692,19 +695,37 @@ D
 :rename Guess_the_number_carbon.png
 :renam
 :w
+:dirs
+:colorscheme Ph
+:!NetworkManager
+:mpa
+:map
+:map ?
+:help
+:dotdirs
+:set dotdirs
+:set dotfiles=1
+:set dotfiles=true
+:set dotfiles=True
+:dotfiles
+:set nodotfiles
+:set dotfiles
+:mkdir 
 :q
 
 # Search history (oldest to newest):
 /public
 /Test
 /desk
+/main
 
 # Prompt history (oldest to newest):
+p2_Условия.cpp
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/username77177/.local/share/vifm/Trash/000_Guess_the_number_carbon.png
+""/home/username77177/.local/share/vifm/Trash/000_2_Условия.cpp
 
 # Directory stack (oldest to newest):
 
@@ -715,6 +736,8 @@ t/home/username77177/.local/share/vifm/Trash/000_Die_roller_carbon.png
 	/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder/Die_roller_carbon.png
 t/home/username77177/.local/share/vifm/Trash/000_Guess_the_number_carbon.png
 	/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder/Guess_the_number_carbon.png
+t/home/username77177/.local/share/vifm/Trash/000_2_Условия.cpp
+	/home/username77177/Downloads/2_Условия.cpp
 
 # State:
 f

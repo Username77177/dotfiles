@@ -17,6 +17,8 @@ alias -g sns='~/dotfiles/scripts/notes.sh show'
 alias -g dt='trash' # Delete to the trash
 alias -g tl='trash-list' # Trash-list
 alias -g rt='restore-trash' #Restore Trash
+alias -g dbm='xrandr --output eDP-1 --primary --auto --output HDMI-1 --auto --right-of eDP-1' #Double monitor
+alias -g om='xrandr --output eDP-1 --primary --auto --output HDMI-1 --off' # One monitor
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

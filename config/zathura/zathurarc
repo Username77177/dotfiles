@@ -100,3 +100,7 @@ set font "JetBrains Mono 14"
 set window-title-home-tilde true
 # То, что выделяется, сразу идёт в буфер обмена
 set selection-clipboard clipboard
+# Отступы
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1

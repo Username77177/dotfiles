@@ -1,26 +1,23 @@
 #!/bin/sh
-# XWINWRAP and bind-programm
-sxhkd &
-killall -q save_your_eyes.sh &
-killall -q notes.sh &
-$HOME/dotfiles/scripts/save_your_eyes.sh &
-$HOME/dotfiles/scripts/save_your_eyes_light.sh &
-$HOME/dotfiles/scripts/notes.sh show &
-#xwinwrap -g 1920x1080 -ov -ni -s -nf --gifview -w WID ~/wallpaper.gif -a &
+sxhkd & 
 
 #Создайте папку ~/wallpapers и поместите туда обои. Они будут выбираться случайно
 feh --bg-scale ~/wallpapers/$(ls ~/wallpapers | shuf -n 1) &
 
 # Polybar
 $HOME/dotfiles/config/polybar/launchpolybar_bspwm.sh & 
+
 # Compton
 killall -q compton; compton --config ~/.config/compton.conf &
+
 # Dunst
 killall -q notify-osd &
 dunst -config ~/.config/dunst/dunstrc &
+
 # Language
 setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle &
-# Startup
+
+# Startup (startup also exist in the end of this file)
 alacritty &
 #emacs26 &
 #code &
@@ -41,6 +38,7 @@ bspc config focus_follows_pointer true
 bspc rule -a Nautilus desktop=^1
 bspc rule -a Alacritty:ranger state=floating follow=on sticky=on
 bspc rule -a Alacritty:vifm state=floating follow=on sticky=on
+bspc rule -a Pcmanfm state=tilling follow=on desktop=^1
 #WEB##
 bspc rule -a Firefox desktop=^2
 ##Firefox Tweaks##
@@ -56,15 +54,28 @@ bspc rule -a discord desktop=^1
 #TERMINALS##
 bspc rule -a Alacritty desktop=^3 follow=on state=tiled
 bspc rule -a xterm desktop=^3 follow=on state=tiled
+bspc rule -a URxvt desktop=^3 follow=on state=tiled
 #EDITORS##
 bspc rule -a Emacs desktop=^4 follow=on state=tiled
 bspc rule -a vim desktop=^4 follow=on
 bpsc rule -a nvim desktop=^4 follow=on
-bspc rule -a Code desktop=^4 follow=on state=fullscreen
+bspc rule -a Code desktop=^4 follow=on state=tiled
+bspc rule -a Boostnote desktop=^4 follow=on state=fullscreen
+bspc rule -a Libreoffice state=tiled follow=on desktop=^4
 #OTHER THINGS
 bspc rule -a Pavucontrol state=floating
-bspc rule -a Zathura state=tiled focus=on
-
+bspc rule -a Zathura state=tiled follow=on
+bspc rule -a Zeal state=tiled follow=off
+bspc rule -a gnome-font-viewer state=floating follow=off
 #FOR ALL WINDOWS
 bspc rule -a * follow=on layer=above state=floating
-bspc rule -a Dunst follow=off layer=above state=floating
+#bspc rule -a Dunst follow=off layer=above state=floating
+
+
+killall -q save_your_eyes.sh &
+killall -q save_your_eyes_light.sh &
+killall -q notes.sh &
+sleep 3
+$HOME/dotfiles/scripts/save_your_eyes.sh &
+$HOME/dotfiles/scripts/save_your_eyes_light.sh &
+$HOME/dotfiles/scripts/notes.sh show &

@@ -48,7 +48,32 @@ bindcode $mod+Shift+89 move container to workspace $workspace4
 # Scratchpad ( летающие float окна поверх других )
 bindcode $mod+105 scratchpad show
 
-exec --no-startup-id ~/dotfiles/config/polybar/launchpolybar_i3.sh
+bar {
+i3bar_command i3bar --transparency
+status_command i3status
+
+position top
+
+separator_symbol "|"
+
+colors {
+    background #2d3436 # Фон всей панели
+    separator #636e72 # Фон разделителей
+    statusline #000000 # Цвет текста дополнительной панели
+
+    # Цвет: Граница, фон, текст
+    #Неактивные бары
+    #Бар на котором вы сейас находитесь
+    #?
+    #Бар на котором новое приложение
+    inactive_workspace      #2f343f #403952 #dfe6e9
+    focused_workspace       #6c5cc9 #6c5ce7 #e9f1f5
+    active_workspace        #000000 #000000 #ffffff
+    urgent_workspacei       #ff7979 #403952 #ffffff
+}
+# У самого последнего разметка: Фон, шрифт, граница
+}
+
 # Темы для границ окон
 # Thanks, addy-dclxvi
 # https://github.com/addy-dclxvi/i3-starterpack/blob/master/.config/i3/config
@@ -72,8 +97,6 @@ bindsym $mod+Shift+t exec telegram-desktop
 bindsym $mod+Shift+v exec alacritty -t 'vim' -e vim
 bindsym $mod+Shift+b exec boostnote
 bindsym $mod+Shift+d exec discord
-bindsym $mod+Shift+c exec code
-bindsym $mod+m exec dmenu_run
 
 bindsym $mod+q kill
 bindsym $mod+d exec "rofi -show drun -show-icons -drun-icon-theme Mojave-CT-Night-Mode"
@@ -89,11 +112,11 @@ floating_modifier $mod
 
 # M + Alt + v
 # разделить следущее по горизонтали
-bindsym $mod+x split h
+bindsym $mod+$mod1+x split h
 
 # M + v
 # разделить следущее окно по вертикали
-bindsym $mod+mod1+x split v
+bindsym $mod+x split v
 
 # F11
 bindcode 95 fullscreen toggle
@@ -137,7 +160,7 @@ bindsym $mod+mod1+f focus mode_toggle
 bindsym $mod+a focus parent
 
 # M + Shift + C перезагрузить конфигурацию
-bindsym $mod+p reload
+bindsym $mod+Shift+c reload
 
 
 ### Звук

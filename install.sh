@@ -57,7 +57,7 @@ elif [[ $1 = "install" ]]; then
     sudo add-apt-repository ppa:mmstick76/alacritty
 
     # Main tools
-    sudo apt install compton rofi trash-cli alacritty tmux nodejs python3 vifm zsh scrot firefox xclip dunst pavucontrol zathura curl wget htop latexmk
+    sudo apt install compton rofi trash-cli alacritty tmux nodejs python3 vifm zsh scrot firefox xclip dunst pavucontrol zathura curl wget htop latexmk usbmount  
 
     echo "Install polybar? [1 - yes]"
     read input

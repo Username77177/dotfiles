@@ -6,6 +6,9 @@
 super + Return
 	alacritty
 
+super + shift + Return
+    rxvt-unicode
+
 # program launcher
 alt + Tab
 # Space for choose window
@@ -13,6 +16,11 @@ alt + Tab
 
 super + d
 	rofi -show drun -show-icons -drun-icon-theme Mojave-CT-Night-Mode
+
+## Dmenu as alternative
+super + m
+# Theme from https://github.com/morhetz/gruvbox-contrib color palette
+    dmenu_run -b -i -fn 'JetBrains Mono' -nb '#282829' -nf '#ebdbb2' -sb '#98971a' -sf '#fbf1c7'
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -33,6 +41,9 @@ super + shift + v
 
 super + shift + n
 	nautilus
+
+super + shift + p
+    pcmanfm
 
 super + shift + t
 	telegram-desktop
@@ -77,7 +88,7 @@ super + shift + o
 
 # Screenshot
 Print
-	scrot ~/Pictures/"Screenshot `date +%F_%R`".png
+    scrot -e 'mv $f ~/Pictures/Screenshot_`date +%m-%d-%y_%R:%S`.png' && notify-send 'Scrot' 'Screenshot saved!' -t 400
 
 #############################
 # bspwm hotkeys
@@ -92,7 +103,7 @@ super + q
 	bspc node -k
 
 # Псевдо полное окно (без отступов)
-super + m
+super + alt + m
 	bspc desktop -l next
 
 # if the current node is automatic, send it to the last manual, otherwise pull the last leaf
@@ -127,7 +138,7 @@ super + f
     fi
 
 #TODO set the node flags
-super + ctrl + {x,y,z}
+super + alt + {c,v,b}
 	bspc node -g {locked,sticky,private}
 
 
