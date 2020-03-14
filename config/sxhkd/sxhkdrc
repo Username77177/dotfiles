@@ -39,6 +39,9 @@ super + shift + m
 super + shift + v
     alacritty --class 'vifm' -e vifm
 
+super + shift + u
+    alacritty --class 'cmus' -e cmus
+
 super + shift + n
 	nautilus
 
