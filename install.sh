@@ -20,6 +20,8 @@ if [[ $1 = "config" ]]; then
     ln -sfr zshrc ~/.zshrc
     ln -sfr config/ncmpcpp ~/
     ln -sfr config/newsbeuter ~/
+    # Move any photo to /usr/share/pixmaps with name wallpaperforlightdm.jpg
+    cp config/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
     
     # .config directory configure
     ln -sfr ./config/dunst ~/.config/

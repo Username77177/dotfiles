@@ -9,6 +9,6 @@ rename Game_designers_carbon.png
 set draw_borders true
 rename strings_1_carbon.png
 rename strings_2_carbon.png
-delete
 !sudo mount /dev/sdb1 Public/
 open_with 
+delete

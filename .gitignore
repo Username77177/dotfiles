@@ -1,5 +1,4 @@
 .somecodes
-.readytopush.sh
 __pycache__
 config/nvim/plugged
 config/Code/!(settings.json)

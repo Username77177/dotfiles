@@ -12,7 +12,7 @@ let NERDTreeDirArrows = 1
 " Coc-bind-download
 " Функция для установки пакетов для COC
 function CocPacks()
-          :CocInstall coc-html coc-python coc-emmet coc-css coc-ccls coc-ultisnips
+          :CocInstall coc-html coc-python coc-emmet coc-css coc-clangd coc-ultisnips
   endf
 
 " Вызов функции с помощью <C-\>

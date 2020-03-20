@@ -9,6 +9,8 @@ super + Return
 super + shift + Return
     rxvt-unicode
 
+super + l
+    dm-tool lock
 # program launcher
 alt + Tab
 # Space for choose window

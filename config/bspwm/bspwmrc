@@ -40,7 +40,7 @@ bspc rule -a Alacritty:ranger state=floating follow=on sticky=on
 bspc rule -a Alacritty:vifm state=floating follow=on sticky=on
 bspc rule -a Pcmanfm state=tilling follow=on desktop=^1
 #WEB##
-bspc rule -a Firefox desktop=^2
+bspc rule -a firefox desktop=^2
 ##Firefox Tweaks##
 bspc rule -a Firefox:Toolkit sticky=on state=floating
 bspc rule -a 'Firefox Beta':Navigator desktop='^2' state=tiled focused=off
@@ -60,6 +60,8 @@ bspc rule -a Emacs desktop=^4 follow=on state=tiled
 bspc rule -a vim desktop=^4 follow=on
 bpsc rule -a nvim desktop=^4 follow=on
 bspc rule -a Code desktop=^4 follow=on state=tiled
+bpsc rule -a code-oss desktop=^4 follow=on state=tiled
+bpsc rule -a jetbrains-idea-ce desktop=^4 follow=on state=floating
 bspc rule -a Boostnote desktop=^4 follow=on state=fullscreen
 bspc rule -a Libreoffice state=tiled follow=on desktop=^4
 #OTHER THINGS

@@ -1,0 +1,47 @@
+# Manjaro
+
+*Snap installed packages, written with italic font in this file*
+
+***NPM packages written with bold cursive***
+
+* networkmanager
+* xterm
+* uxterm
+* xorg-server
+* xorg-init
+* polybar
+* compton
+* alacritty
+* dunst
+* nvim
+* rofi
+* xf86-ati
+* lightdm
+* ttf-jetbrains-mono
+* redshift
+* ttf-font-awesome
+* nmtui
+* dmenu
+* ranger
+* pcmanfm
+* firefox
+* *ccls*
+* lxappearance
+* snapd
+* pavucontrol
+* pulseaudio
+* intellij-idea-communnity-edition
+* gcc
+* pamac
+* *clangd*
+* ***live-server***
+* ***how2***
+* deepin-gtk-theme
+* deepin-icon-theme
+* sxiv
+* mpv
+* zeal
+* zathura
+* graphviz
+* xarchiver-gtk2 
+* xclip
