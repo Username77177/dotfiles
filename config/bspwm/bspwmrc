@@ -34,6 +34,7 @@ bspc config gapless_monocle      true
 bspc config focus_follows_pointer true
 
 #RULES#
+bspc rule -r ':'
 #FM##
 bspc rule -a Nautilus desktop=^1
 bspc rule -a Alacritty:ranger state=floating follow=on sticky=on
@@ -43,8 +44,8 @@ bspc rule -a Pcmanfm state=tilling follow=on desktop=^1
 bspc rule -a firefox desktop=^2
 ##Firefox Tweaks##
 bspc rule -a Firefox:Toolkit sticky=on state=floating
-bspc rule -a 'Firefox Beta':Navigator desktop='^2' state=tiled focused=off
-bspc rule -a Firefox:SessionManager desktop='^2' state=floating layer=above
+bspc rule -a Firefox Beta:Navigator desktop=^2 state=tiled focused=off
+bspc rule -a Firefox:SessionManager desktop=^2 state=floating layer=above
 bspc rule -a Toplevel:Firefox state=floating
 bspc rule -a Firefox:Dialog state=floating
 ##
@@ -60,9 +61,10 @@ bspc rule -a Emacs desktop=^4 follow=on state=tiled
 bspc rule -a vim desktop=^4 follow=on
 bpsc rule -a nvim desktop=^4 follow=on
 bspc rule -a Code desktop=^4 follow=on state=tiled
-bpsc rule -a code-oss desktop=^4 follow=on state=tiled
+bpsc rule -a 'code-oss' desktop=^4 follow=on state=tiled
 bpsc rule -a jetbrains-idea-ce desktop=^4 follow=on state=floating
 bspc rule -a Boostnote desktop=^4 follow=on state=fullscreen
+bpsc rule -a 'marktext' state=fullscreen follow=on desktop=^4
 bspc rule -a Libreoffice state=tiled follow=on desktop=^4
 #OTHER THINGS
 bspc rule -a Pavucontrol state=floating
@@ -81,3 +83,4 @@ sleep 3
 $HOME/dotfiles/scripts/save_your_eyes.sh &
 $HOME/dotfiles/scripts/save_your_eyes_light.sh &
 $HOME/dotfiles/scripts/notes.sh show &
+$HOME/.dropbox-dist/dropboxd &

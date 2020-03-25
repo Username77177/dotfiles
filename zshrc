@@ -13,8 +13,7 @@ alias -g em='emacs26'
 alias -g fr='firefox'
 alias -g es='pkill save_your_eyes.sh'
 alias -g ns='~/dotfiles/scripts/notes.sh new'
-alias -g sns='~/dotfiles/scripts/notes.sh show'
-alias -g dt='trash' # Delete to the trash
+alias -g sns='~/dotfiles/scripts/notes.sh show' alias -g dt='trash' # Delete to the trash
 alias -g tl='trash-list' # Trash-list
 alias -g rt='restore-trash' #Restore Trash
 alias -g dbm='xrandr --output eDP-1 --primary --auto --output HDMI-1 --auto --right-of eDP-1' #Double monitor
@@ -118,4 +117,5 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh

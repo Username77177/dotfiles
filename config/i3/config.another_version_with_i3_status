@@ -49,29 +49,29 @@ bindcode $mod+Shift+89 move container to workspace $workspace4
 bindcode $mod+105 scratchpad show
 
 bar {
-i3bar_command i3bar --transparency
-status_command i3status
+    i3bar_command i3bar --transparency
+    status_command i3status
 
-position top
+    position top
 
-separator_symbol "|"
+    separator_symbol "|"
 
-colors {
-    background #2d3436 # Фон всей панели
-    separator #636e72 # Фон разделителей
-    statusline #000000 # Цвет текста дополнительной панели
+    colors {
+        background #2d3436 # Фон всей панели
+        separator #636e72 # Фон разделителей
+        statusline #000000 # Цвет текста дополнительной панели
 
-    # Цвет: Граница, фон, текст
-    #Неактивные бары
-    #Бар на котором вы сейас находитесь
-    #?
-    #Бар на котором новое приложение
-    inactive_workspace      #2f343f #403952 #dfe6e9
-    focused_workspace       #6c5cc9 #6c5ce7 #e9f1f5
-    active_workspace        #000000 #000000 #ffffff
-    urgent_workspacei       #ff7979 #403952 #ffffff
-}
-# У самого последнего разметка: Фон, шрифт, граница
+        # Цвет: Граница, фон, текст
+        #Неактивные бары
+        #Бар на котором вы сейас находитесь
+        #?
+        #Бар на котором новое приложение
+        inactive_workspace      #2f343f #403952 #dfe6e9
+        focused_workspace       #6c5cc9 #6c5ce7 #e9f1f5
+        active_workspace        #000000 #000000 #ffffff
+        urgent_workspacei       #ff7979 #403952 #ffffff
+    }
+    # У самого последнего разметка: Фон, шрифт, граница
 }
 
 # Темы для границ окон

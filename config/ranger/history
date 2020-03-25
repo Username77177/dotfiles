@@ -12,3 +12,4 @@ rename strings_2_carbon.png
 !sudo mount /dev/sdb1 Public/
 open_with 
 delete
+mkdir Dahl-final-release-of-site
