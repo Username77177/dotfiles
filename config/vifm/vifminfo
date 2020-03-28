@@ -21,7 +21,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -30,27 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/
-	home
-5
-d/home
-	username77177
-1
-d/home/username77177
-	..
-0
-d/home
-	username77177
-1
-d/home/username77177
-	Pictures
-6
-d/home/username77177/Pictures
-	..
-0
-d/home/username77177
-	Public
-7
 d/home/username77177/Public
 	..
 0
@@ -330,6 +309,27 @@ d/home/username77177/gitprojects/learning/cpp/cpp_in_a_week_mainfolder
 d/home/username77177/gitprojects/learning/cpp
 	.vscode
 1
+d/home/username77177/gitprojects
+	..
+0
+d/home/username77177
+	gitprojects
+8
+d/home
+	username77177
+2
+d/
+	usr
+18
+d/usr
+	share
+7
+d/usr/share
+	pixmaps
+37
+d/usr/share/pixmaps
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -607,8 +607,14 @@ D/home/username77177
 	Downloads
 4
 D/home/username77177/Downloads
-	pdf2png
-4
+	wallpaperforlightdm.jpg
+2
+D/home/username77177
+	Downloads
+6
+D/home/username77177/Downloads
+	wallpaperforlightdm.jpg
+3
 D
 
 # Command line history (oldest to newest):
@@ -718,6 +724,8 @@ D
 /Test
 /desk
 /main
+/usr
+/pix
 
 # Prompt history (oldest to newest):
 p2_Условия.cpp
@@ -725,7 +733,7 @@ p2_Условия.cpp
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/username77177/.local/share/vifm/Trash/000_2_Условия.cpp
+""/home/username77177/Downloads/wallpaperforlightdm.jpg
 
 # Directory stack (oldest to newest):
 

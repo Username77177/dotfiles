@@ -52,3 +52,11 @@
 * dev
 * vicious
 * sensors
+* polkit
+* polkit-gnome
+* xorg-xinit
+* xorg-xrandr
+* xorg-xset
+* pulseaudio-alsa
+* alsa-plugins
+* alsa-lib

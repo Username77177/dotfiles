@@ -1,0 +1,11 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) alacritty -e htop ;;
+	3) notify-send "CPU Temperature" "LC - открыть htop\nRC - открыть это сообщение" ;;
+
+esac
+
+echo "<span bgcolor='#6c5ce7' color='#f3f3f3'> CPU_Temp:`sensors | grep CPU | awk '{print $2}'` </span>"
+
+exit

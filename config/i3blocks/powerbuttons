@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "<span color='#f3f3f3' bgcolor='#83c07c'> P|S|R </span>"
+
+case $BLOCK_BUTTON in
+    1) shutdown now -h ;;
+    2) systemctl suspend ;;
+    3) shutdown now -r ;;
+esac;

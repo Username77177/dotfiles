@@ -1,0 +1,8 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+    1) alacritty -e nmtui ;;
+    3) notify-send "Wifi" "LC - открыть nmtui\nRC - вывести это сообщение" ;;
+esac
+echo "<span bgcolor='#00b894' color='#f3f3f3'> WIFI:`iw dev | grep ssid | sed 's/ssid//g' | tr -d '\t'` </span>"
+exit

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Editor"
+
+case $BLOCK_BUTTON in
+    1) alacritty -e fzf ;;
+    3) notify-send "Редактор" "LC - для открытия поиска, а затем редактора\nRC - для открытия данного сообщения";;
+esac;

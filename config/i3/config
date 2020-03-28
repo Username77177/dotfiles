@@ -7,16 +7,17 @@ set $workspace4 "Editors"
 
 #Autostart
 #exec_always --no-startup-id "killall -q compton; compton --config ~/.config/compton.conf"
-exec_always --no-startup-id "killall -q picom; picom --backend glx --experimental-backends --config ~/dotfiles/config/picom.conf"
+exec_always --no-startup-id "killall -q picom; picom --config ~/dotfiles/config/picom.conf"
 
 exec killall -q notify-osd
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec --no-startup-id /home/username77177/.dropbox-dist/dropboxd
 
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle
 
-#exec --no-startup-id feh --bg-scale ~/wallpapers/$(ls ~/wallpapers | shuf -n 1)
-exec --no-startup-id feh --bg-scale ~/wallpapers/Witcher.png
+exec --no-startup-id feh --bg-scale ~/wallpapers/$(ls ~/wallpapers | shuf -n 1)
+#exec --no-startup-id feh --bg-scale ~/wallpapers/Witcher.png
 
 ##### Автозапуск приложений
 exec alacritty
@@ -235,4 +236,5 @@ exec sleep 3
 exec $HOME/dotfiles/scripts/save_your_eyes.sh &
 exec $HOME/dotfiles/scripts/save_your_eyes_light.sh &
 exec $HOME/dotfiles/scripts/notes.sh show &
+exec --no-startup-id dropbox &
 #####
