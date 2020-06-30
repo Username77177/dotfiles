@@ -22,7 +22,7 @@ then
 	if [[ $yon = "1" ]]
 	then
 		xclip -sel clip ./.somecodes
-		git push origin master
+		git push origin i3-ground-rain
 	fi
 fi
 
